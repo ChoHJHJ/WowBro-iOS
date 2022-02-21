@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HQE-2G-db8">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -22,10 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_bg" translatesAutoresizingMaskIntoConstraints="NO" id="TWS-w4-FUX">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="1CN-P9-FzZ"/>
+                                </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qyk-rT-KCi">
-                                <rect key="frame" x="0.0" y="244" width="390" height="600"/>
+                                <rect key="frame" x="0.0" y="238" width="390" height="606"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wowbro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRL-Bb-gQL">
                                         <rect key="frame" x="126" y="45" width="138" height="52.333333333333343"/>
@@ -68,6 +71,9 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="o8g-kc-uez" kind="show" id="MaM-Nl-eiI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XaM-4w-CzR">
                                                 <rect key="frame" x="0.0" y="217.33333333333331" width="310" height="50"/>
@@ -147,11 +153,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qyk-rT-KCi" secondAttribute="trailing" id="FNH-9j-E5d"/>
                             <constraint firstAttribute="bottom" secondItem="Qyk-rT-KCi" secondAttribute="bottom" id="G4w-c0-Tzm"/>
                             <constraint firstItem="TWS-w4-FUX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L9E-Tj-Mu2"/>
-                            <constraint firstAttribute="bottom" secondItem="TWS-w4-FUX" secondAttribute="bottom" id="YHD-WJ-gdn"/>
                             <constraint firstItem="Qyk-rT-KCi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="chN-zF-HPb"/>
-                            <constraint firstItem="Qyk-rT-KCi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="fl5-dR-hW8"/>
+                            <constraint firstItem="Qyk-rT-KCi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="fl5-dR-hW8"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cqs-c9-fra"/>
                     <connections>
                         <outlet property="appleLoginButton" destination="jKe-Vx-OSz" id="Jmo-wz-voT"/>
                         <outlet property="emailTextField" destination="Ydh-gp-Xc2" id="0ua-cu-3Bo"/>
@@ -163,7 +169,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45" y="68"/>
+            <point key="canvasLocation" x="863" y="68"/>
+        </scene>
+        <!--회원가입-->
+        <scene sceneID="kxY-RO-7Rs">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="o8g-kc-uez" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ue9-Yf-lhE">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hG1-7r-AjE">
+                                <rect key="frame" x="0.0" y="88" width="390" height="756"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="wowbro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7x-jj-EvZ">
+                                        <rect key="frame" x="126" y="41" width="138" height="52.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="glogo" family="glogo" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="h7x-jj-EvZ" firstAttribute="top" secondItem="hG1-7r-AjE" secondAttribute="top" constant="45" id="JkA-uW-lLs"/>
+                                    <constraint firstItem="h7x-jj-EvZ" firstAttribute="centerX" secondItem="hG1-7r-AjE" secondAttribute="centerX" id="dB8-qm-P2t"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PfG-dv-yhz"/>
+                        <color key="backgroundColor" red="0.7921530604" green="0.94510036710000001" blue="0.9490186572" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hG1-7r-AjE" firstAttribute="trailing" secondItem="PfG-dv-yhz" secondAttribute="trailing" id="OJQ-VE-0zC"/>
+                            <constraint firstItem="hG1-7r-AjE" firstAttribute="top" secondItem="PfG-dv-yhz" secondAttribute="top" id="gHK-fj-d1L"/>
+                            <constraint firstItem="hG1-7r-AjE" firstAttribute="leading" secondItem="PfG-dv-yhz" secondAttribute="leading" id="goS-2v-i3N"/>
+                            <constraint firstAttribute="bottom" secondItem="hG1-7r-AjE" secondAttribute="bottom" id="rPh-6m-7yE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="회원가입" id="x1p-L8-k8p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CYN-lT-TOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1584.6153846153845" y="67.535545023696685"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="V9R-ZG-e2S">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HQE-2G-db8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ivb-Ux-Gvf">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="039-r9-Gxk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JK9-6A-c5d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.615384615384613" y="67.535545023696685"/>
         </scene>
     </scenes>
     <resources>
