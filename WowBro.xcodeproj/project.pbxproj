@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B32560CD27C5019200873CAA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32560CC27C5019200873CAA /* MainViewController.swift */; };
+		B32560CF27C5020B00873CAA /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32560CE27C5020B00873CAA /* ThemeViewController.swift */; };
+		B32560D227C506AF00873CAA /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32560D127C506AF00873CAA /* Tour.swift */; };
+		B32560D527C509E900873CAA /* TourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32560D327C509E900873CAA /* TourTableViewCell.swift */; };
+		B32560D627C509E900873CAA /* TourTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B32560D427C509E900873CAA /* TourTableViewCell.xib */; };
+		B32560D827C529B900873CAA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32560D727C529B900873CAA /* DetailViewController.swift */; };
 		B3B4C0E727C3B0450092482F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4C0E627C3B0450092482F /* AppDelegate.swift */; };
 		B3B4C0E927C3B0450092482F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4C0E827C3B0450092482F /* SceneDelegate.swift */; };
 		B3B4C0EB27C3B0450092482F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4C0EA27C3B0450092482F /* ViewController.swift */; };
@@ -19,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B32560CC27C5019200873CAA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B32560CE27C5020B00873CAA /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
+		B32560D127C506AF00873CAA /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
+		B32560D327C509E900873CAA /* TourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewCell.swift; sourceTree = "<group>"; };
+		B32560D427C509E900873CAA /* TourTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourTableViewCell.xib; sourceTree = "<group>"; };
+		B32560D727C529B900873CAA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B3B4C0E327C3B0450092482F /* WowBro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowBro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B4C0E627C3B0450092482F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3B4C0E827C3B0450092482F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B32560D027C506A000873CAA /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				B32560D127C506AF00873CAA /* Tour.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
 		B3B4C0DA27C3B0450092482F = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +82,7 @@
 		B3B4C0E527C3B0450092482F /* WowBro */ = {
 			isa = PBXGroup;
 			children = (
+				B32560D027C506A000873CAA /* Data Model */,
 				B3B4C10927C3E0800092482F /* Delegate */,
 				B3B4C10827C3E0370092482F /* View */,
 				B3B4C10127C3DB3F0092482F /* Controller */,
@@ -69,6 +90,8 @@
 				B3B4C10627C3E01D0092482F /* ExtensionUI.swift */,
 				B3B4C0F427C3B0460092482F /* Info.plist */,
 				B3B4C10A27C3E28B0092482F /* Assets.xcassets */,
+				B32560D327C509E900873CAA /* TourTableViewCell.swift */,
+				B32560D427C509E900873CAA /* TourTableViewCell.xib */,
 			);
 			path = WowBro;
 			sourceTree = "<group>";
@@ -78,6 +101,9 @@
 			children = (
 				B3B4C0EA27C3B0450092482F /* ViewController.swift */,
 				B3B4C10227C3DB600092482F /* RegisterViewController.swift */,
+				B32560CC27C5019200873CAA /* MainViewController.swift */,
+				B32560CE27C5020B00873CAA /* ThemeViewController.swift */,
+				B32560D727C529B900873CAA /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -161,6 +187,7 @@
 				B3B4C0F327C3B0460092482F /* LaunchScreen.storyboard in Resources */,
 				B3B4C0FE27C3B8220092482F /* Assets in Resources */,
 				B3B4C10B27C3E2F00092482F /* Assets.xcassets in Resources */,
+				B32560D627C509E900873CAA /* TourTableViewCell.xib in Resources */,
 				B3B4C0EE27C3B0450092482F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,9 +201,14 @@
 			files = (
 				B3B4C10727C3E01D0092482F /* ExtensionUI.swift in Sources */,
 				B3B4C0EB27C3B0450092482F /* ViewController.swift in Sources */,
+				B32560CF27C5020B00873CAA /* ThemeViewController.swift in Sources */,
+				B32560D527C509E900873CAA /* TourTableViewCell.swift in Sources */,
 				B3B4C10327C3DB600092482F /* RegisterViewController.swift in Sources */,
+				B32560CD27C5019200873CAA /* MainViewController.swift in Sources */,
 				B3B4C0E727C3B0450092482F /* AppDelegate.swift in Sources */,
+				B32560D827C529B900873CAA /* DetailViewController.swift in Sources */,
 				B3B4C0E927C3B0450092482F /* SceneDelegate.swift in Sources */,
+				B32560D227C506AF00873CAA /* Tour.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

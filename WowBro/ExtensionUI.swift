@@ -24,3 +24,14 @@ extension UITextField {
         self.addLeftPadding()
     }
 }
+
+// 둥근 이미지 버튼 만들어주기
+extension UIButton {
+    func roundButton() {
+        self.layer.cornerRadius = self.layer.frame.size.width/2
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+        self.layer.shadowRadius = 2.0
+        self.layer.shadowOpacity = 0.5
+    }
+}
