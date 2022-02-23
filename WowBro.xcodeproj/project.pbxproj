@@ -24,8 +24,8 @@
 		B3B4C10727C3E01D0092482F /* ExtensionUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4C10627C3E01D0092482F /* ExtensionUI.swift */; };
 		B3B4C10B27C3E2F00092482F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B4C10A27C3E28B0092482F /* Assets.xcassets */; };
 		B3FB003427C6540A00820F16 /* CustomSideMenuNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB003327C6540A00820F16 /* CustomSideMenuNavigation.swift */; };
-		B3FB003627C6549B00820F16 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB003527C6549B00820F16 /* SideMenuViewController.swift */; };
 		B3FB003827C67AFC00820F16 /* WebInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB003727C67AFC00820F16 /* WebInfoViewController.swift */; };
+		B3FB003A27C6835100820F16 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB003927C6835100820F16 /* SideMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,8 +49,8 @@
 		B3B4C10627C3E01D0092482F /* ExtensionUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUI.swift; sourceTree = "<group>"; };
 		B3B4C10A27C3E28B0092482F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3FB003327C6540A00820F16 /* CustomSideMenuNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSideMenuNavigation.swift; sourceTree = "<group>"; };
-		B3FB003527C6549B00820F16 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		B3FB003727C67AFC00820F16 /* WebInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebInfoViewController.swift; sourceTree = "<group>"; };
+		B3FB003927C6835100820F16 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		CFF7268128BD3251CAB2F992 /* Pods_WowBro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowBro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -134,8 +134,8 @@
 				B32560D727C529B900873CAA /* DetailViewController.swift */,
 				B3B4C10627C3E01D0092482F /* ExtensionUI.swift */,
 				B3FB003327C6540A00820F16 /* CustomSideMenuNavigation.swift */,
-				B3FB003527C6549B00820F16 /* SideMenuViewController.swift */,
 				B3FB003727C67AFC00820F16 /* WebInfoViewController.swift */,
+				B3FB003927C6835100820F16 /* SideMenuViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -279,8 +279,8 @@
 				B3B4C10727C3E01D0092482F /* ExtensionUI.swift in Sources */,
 				B3B4C0EB27C3B0450092482F /* ViewController.swift in Sources */,
 				B32560CF27C5020B00873CAA /* ThemeViewController.swift in Sources */,
+				B3FB003A27C6835100820F16 /* SideMenuViewController.swift in Sources */,
 				B32560D527C509E900873CAA /* TourTableViewCell.swift in Sources */,
-				B3FB003627C6549B00820F16 /* SideMenuViewController.swift in Sources */,
 				B3B4C10327C3DB600092482F /* RegisterViewController.swift in Sources */,
 				B3FB003827C67AFC00820F16 /* WebInfoViewController.swift in Sources */,
 				B32560CD27C5019200873CAA /* MainViewController.swift in Sources */,

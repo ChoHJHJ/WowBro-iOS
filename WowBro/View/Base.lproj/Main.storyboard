@@ -265,7 +265,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="dpX-2y-UWW" kind="relationship" relationship="rootViewController" id="ID7-Uo-1Im"/>
+                        <segue destination="dpX-2y-UWW" kind="relationship" relationship="rootViewController" id="JmH-iV-QxT"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fti-eO-zbW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -433,7 +433,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ao8-ME-14v"/>
                     <connections>
-                        <outlet property="myPhoto" destination="ShL-6c-S9e" id="HMW-mX-257"/>
+                        <outlet property="photo" destination="ShL-6c-S9e" id="MZu-5r-yOp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dra-OS-y81" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
