@@ -29,5 +29,12 @@ class DetailViewController: UIViewController {
         storyTitle.text = tourDetail?.storyTitle
         tourStory.text = tourDetail?.tourStory
     }
-
+    
+    // 웹뷰로 세그웨이 URL 데이터 보내기
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is WebInfoViewController {
+            let webVC = segue.destination as? WebInfoViewController
+            webVC?.tourUrl = tourDetail?.webViewUrl
+        }
+    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AAC9D8DE9EDC11D103A7F07 /* Pods_WowBro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF7268128BD3251CAB2F992 /* Pods_WowBro.framework */; };
 		B32560CD27C5019200873CAA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32560CC27C5019200873CAA /* MainViewController.swift */; };
 		B32560CF27C5020B00873CAA /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32560CE27C5020B00873CAA /* ThemeViewController.swift */; };
 		B32560D227C506AF00873CAA /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32560D127C506AF00873CAA /* Tour.swift */; };
@@ -22,9 +23,14 @@
 		B3B4C10327C3DB600092482F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4C10227C3DB600092482F /* RegisterViewController.swift */; };
 		B3B4C10727C3E01D0092482F /* ExtensionUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4C10627C3E01D0092482F /* ExtensionUI.swift */; };
 		B3B4C10B27C3E2F00092482F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B4C10A27C3E28B0092482F /* Assets.xcassets */; };
+		B3FB003427C6540A00820F16 /* CustomSideMenuNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB003327C6540A00820F16 /* CustomSideMenuNavigation.swift */; };
+		B3FB003627C6549B00820F16 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB003527C6549B00820F16 /* SideMenuViewController.swift */; };
+		B3FB003827C67AFC00820F16 /* WebInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB003727C67AFC00820F16 /* WebInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18D25B4F8325A624BAACA0F6 /* Pods-WowBro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowBro.release.xcconfig"; path = "Target Support Files/Pods-WowBro/Pods-WowBro.release.xcconfig"; sourceTree = "<group>"; };
+		59F4E269EBDA09D139035015 /* Pods-WowBro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowBro.debug.xcconfig"; path = "Target Support Files/Pods-WowBro/Pods-WowBro.debug.xcconfig"; sourceTree = "<group>"; };
 		B32560CC27C5019200873CAA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B32560CE27C5020B00873CAA /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		B32560D127C506AF00873CAA /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
@@ -42,6 +48,10 @@
 		B3B4C10227C3DB600092482F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B3B4C10627C3E01D0092482F /* ExtensionUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUI.swift; sourceTree = "<group>"; };
 		B3B4C10A27C3E28B0092482F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3FB003327C6540A00820F16 /* CustomSideMenuNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSideMenuNavigation.swift; sourceTree = "<group>"; };
+		B3FB003527C6549B00820F16 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		B3FB003727C67AFC00820F16 /* WebInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebInfoViewController.swift; sourceTree = "<group>"; };
+		CFF7268128BD3251CAB2F992 /* Pods_WowBro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowBro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,12 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AAC9D8DE9EDC11D103A7F07 /* Pods_WowBro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0110C224582D73B40FAA44BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59F4E269EBDA09D139035015 /* Pods-WowBro.debug.xcconfig */,
+				18D25B4F8325A624BAACA0F6 /* Pods-WowBro.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7C13232415F1FFD86F95473A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFF7268128BD3251CAB2F992 /* Pods_WowBro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B32560D027C506A000873CAA /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +96,8 @@
 			children = (
 				B3B4C0E527C3B0450092482F /* WowBro */,
 				B3B4C0E427C3B0450092482F /* Products */,
+				0110C224582D73B40FAA44BF /* Pods */,
+				7C13232415F1FFD86F95473A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,11 +117,8 @@
 				B3B4C10827C3E0370092482F /* View */,
 				B3B4C10127C3DB3F0092482F /* Controller */,
 				B3B4C0FD27C3B8220092482F /* Assets */,
-				B3B4C10627C3E01D0092482F /* ExtensionUI.swift */,
 				B3B4C0F427C3B0460092482F /* Info.plist */,
 				B3B4C10A27C3E28B0092482F /* Assets.xcassets */,
-				B32560D327C509E900873CAA /* TourTableViewCell.swift */,
-				B32560D427C509E900873CAA /* TourTableViewCell.xib */,
 			);
 			path = WowBro;
 			sourceTree = "<group>";
@@ -99,11 +126,16 @@
 		B3B4C10127C3DB3F0092482F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B32560D327C509E900873CAA /* TourTableViewCell.swift */,
 				B3B4C0EA27C3B0450092482F /* ViewController.swift */,
 				B3B4C10227C3DB600092482F /* RegisterViewController.swift */,
 				B32560CC27C5019200873CAA /* MainViewController.swift */,
 				B32560CE27C5020B00873CAA /* ThemeViewController.swift */,
 				B32560D727C529B900873CAA /* DetailViewController.swift */,
+				B3B4C10627C3E01D0092482F /* ExtensionUI.swift */,
+				B3FB003327C6540A00820F16 /* CustomSideMenuNavigation.swift */,
+				B3FB003527C6549B00820F16 /* SideMenuViewController.swift */,
+				B3FB003727C67AFC00820F16 /* WebInfoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -111,6 +143,7 @@
 		B3B4C10827C3E0370092482F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B32560D427C509E900873CAA /* TourTableViewCell.xib */,
 				B3B4C0EC27C3B0450092482F /* Main.storyboard */,
 				B3B4C0F127C3B0460092482F /* LaunchScreen.storyboard */,
 			);
@@ -133,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3B4C0F727C3B0460092482F /* Build configuration list for PBXNativeTarget "WowBro" */;
 			buildPhases = (
+				18602EB8F226F522A713D43C /* [CP] Check Pods Manifest.lock */,
 				B3B4C0DF27C3B0450092482F /* Sources */,
 				B3B4C0E027C3B0450092482F /* Frameworks */,
 				B3B4C0E127C3B0450092482F /* Resources */,
+				A9B90C66B105351BCE052BA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +229,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18602EB8F226F522A713D43C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WowBro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9B90C66B105351BCE052BA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WowBro/Pods-WowBro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WowBro/Pods-WowBro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WowBro/Pods-WowBro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B3B4C0DF27C3B0450092482F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -203,9 +280,12 @@
 				B3B4C0EB27C3B0450092482F /* ViewController.swift in Sources */,
 				B32560CF27C5020B00873CAA /* ThemeViewController.swift in Sources */,
 				B32560D527C509E900873CAA /* TourTableViewCell.swift in Sources */,
+				B3FB003627C6549B00820F16 /* SideMenuViewController.swift in Sources */,
 				B3B4C10327C3DB600092482F /* RegisterViewController.swift in Sources */,
+				B3FB003827C67AFC00820F16 /* WebInfoViewController.swift in Sources */,
 				B32560CD27C5019200873CAA /* MainViewController.swift in Sources */,
 				B3B4C0E727C3B0450092482F /* AppDelegate.swift in Sources */,
+				B3FB003427C6540A00820F16 /* CustomSideMenuNavigation.swift in Sources */,
 				B32560D827C529B900873CAA /* DetailViewController.swift in Sources */,
 				B3B4C0E927C3B0450092482F /* SceneDelegate.swift in Sources */,
 				B32560D227C506AF00873CAA /* Tour.swift in Sources */,
@@ -352,6 +432,7 @@
 		};
 		B3B4C0F827C3B0460092482F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59F4E269EBDA09D139035015 /* Pods-WowBro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -381,6 +462,7 @@
 		};
 		B3B4C0F927C3B0460092482F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18D25B4F8325A624BAACA0F6 /* Pods-WowBro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

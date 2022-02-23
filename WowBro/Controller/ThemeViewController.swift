@@ -11,7 +11,7 @@ class ThemeViewController: UIViewController {
     @IBOutlet weak var themeImageView: UIImageView!
     @IBOutlet weak var themeListTableView: UITableView!
     
-    var tourList: [Tour] = [Tour(tourName: "펭귄마을", address: "광주 남구 천변좌로 446번길 7", tourPhotoUrl: "ㅉㅈ", tourDetail: TourDetail(isGood: false, webViewUrl: "www", qrCode: "www", storyTitle: "안녕하세요", tourStory: "안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 "), isStamped: false), Tour(tourName: "공예거리", address: "광주 남구 오기원길 20-13", tourPhotoUrl: "ㅉㅈ", tourDetail: TourDetail(isGood: false, webViewUrl: "www", qrCode: "www", storyTitle: "공예거리입니다.", tourStory: "마마마ㅏ마마마마마마마마마마마ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ"), isStamped: false)]
+    var tourList: [Tour] = [Tour(tourName: "펭귄마을", address: "광주 남구 천변좌로 446번길 7", tourPhotoUrl: "ㅉㅈ", tourDetail: TourDetail(isGood: false, webViewUrl: "https://m.place.naver.com/place/37615287/home?entry=pll", qrCode: "www", storyTitle: "안녕하세요", tourStory: "안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 "), isStamped: false), Tour(tourName: "공예거리", address: "광주 남구 오기원길 20-13", tourPhotoUrl: "ㅉㅈ", tourDetail: TourDetail(isGood: false, webViewUrl: "https://m.place.naver.com/place/1530716998/home?entry=pll", qrCode: "www", storyTitle: "공예거리입니다.", tourStory: "마마마ㅏ마마마마마마마마마마마ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ"), isStamped: false)]
     
     override func viewDidLoad() {
         super.viewDidLoad()

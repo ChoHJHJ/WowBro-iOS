@@ -11,6 +11,9 @@
         <array key="SCDream4.otf">
             <string>S-CoreDream-4Regular</string>
         </array>
+        <array key="SCDream6.otf">
+            <string>S-CoreDream-6Bold</string>
+        </array>
         <array key="godoRounded R.ttf">
             <string>glogo</string>
         </array>
@@ -33,7 +36,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qyk-rT-KCi">
                                 <rect key="frame" x="0.0" y="238" width="390" height="606"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wowbro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRL-Bb-gQL">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wowbro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRL-Bb-gQL">
                                         <rect key="frame" x="126" y="45" width="138" height="52.333333333333343"/>
                                         <fontDescription key="fontDescription" name="glogo" family="glogo" pointSize="50"/>
                                         <nil key="textColor"/>
@@ -198,7 +201,14 @@
                         <viewLayoutGuide key="safeArea" id="WZp-SB-kRp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ICM-gF-U05"/>
+                    <navigationItem key="navigationItem" id="ICM-gF-U05">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="list.dash" catalog="system" style="done" id="4K9-ef-bMH">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <segue destination="qFc-tK-omL" kind="show" id="ULb-oR-77F"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0lV-dH-yLk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -244,6 +254,191 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qeh-R4-SBK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2161.5384615384614" y="73.93364928909952"/>
+        </scene>
+        <!--Custom Side Menu Navigation-->
+        <scene sceneID="2nS-7e-1sx">
+            <objects>
+                <navigationController id="qFc-tK-omL" customClass="CustomSideMenuNavigation" customModule="WowBro" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hWN-Kj-edb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fwQ-xt-nXf">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dpX-2y-UWW" kind="relationship" relationship="rootViewController" id="ID7-Uo-1Im"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fti-eO-zbW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1445" y="787"/>
+        </scene>
+        <!--Side Menu View Controller-->
+        <scene sceneID="5EB-wr-8xA">
+            <objects>
+                <viewController id="dpX-2y-UWW" customClass="SideMenuViewController" customModule="WowBro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OwE-8m-E2t">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chohj" translatesAutoresizingMaskIntoConstraints="NO" id="ShL-6c-S9e">
+                                <rect key="frame" x="145" y="168" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="VoR-RZ-Kjh"/>
+                                    <constraint firstAttribute="width" constant="100" id="yNz-Un-oT5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="chj113024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2X9-Ar-1GR">
+                                <rect key="frame" x="143" y="297" width="104" height="23.333333333333314"/>
+                                <fontDescription key="fontDescription" name="S-CoreDream-6Bold" family="S-Core Dream" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCG-2p-1z9">
+                                <rect key="frame" x="154" y="344.33333333333331" width="82" height="21"/>
+                                <fontDescription key="fontDescription" name="S-CoreDream-4Regular" family="S-Core Dream" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Pf3-az-wI0">
+                                <rect key="frame" x="113" y="408.33333333333331" width="164" height="140.99999999999994"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="qGK-QB-w1x">
+                                        <rect key="frame" x="0.0" y="0.0" width="85" height="30"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homekit" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Mjt-ov-zgv">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="29.666666666666664"/>
+                                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="1By-fb-ARa"/>
+                                                    <constraint firstAttribute="width" constant="30" id="1h0-Gu-FgP"/>
+                                                </constraints>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="10"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NaH-kr-9L1">
+                                                <rect key="frame" x="55" y="0.0" width="30" height="30"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="홈">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="18" name="S-CoreDream-4Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="est-cD-1DU">
+                                        <rect key="frame" x="0.0" y="37" width="147" height="30"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Tfw-5K-bjj">
+                                                <rect key="frame" x="0.0" y="-0.33333333333333215" width="30" height="29.666666666666664"/>
+                                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="WRm-tG-zaJ"/>
+                                                    <constraint firstAttribute="width" constant="30" id="rg9-aq-WXl"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDV-AZ-Qdw">
+                                                <rect key="frame" x="55" y="0.0" width="92" height="30"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="여행지 랭킹">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="18" name="S-CoreDream-4Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="JBk-cL-Y8G">
+                                        <rect key="frame" x="0.0" y="74" width="164" height="30"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.text.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zEl-Qf-jap">
+                                                <rect key="frame" x="0.0" y="1.6666666666666643" width="30" height="27.000000000000004"/>
+                                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="ZpZ-SN-P61"/>
+                                                    <constraint firstAttribute="height" constant="30" id="yhf-TV-Kdy"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T9v-WH-KWD">
+                                                <rect key="frame" x="55" y="0.0" width="109" height="30"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="회원정보 수정">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="18" name="S-CoreDream-4Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="6uI-Xv-zgg">
+                                        <rect key="frame" x="0.0" y="111.00000000000006" width="125" height="30"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.uturn.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="REZ-df-dAT">
+                                                <rect key="frame" x="0.0" y="2.3333333333333321" width="30" height="27.33333333333335"/>
+                                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="Etq-i2-YA8"/>
+                                                    <constraint firstAttribute="height" constant="30" id="Qp0-p4-Vrz"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hRk-Ni-bKU">
+                                                <rect key="frame" x="55" y="0.0" width="70" height="30"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="로그아웃">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="18" name="S-CoreDream-4Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iMh-xi-dFC"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="ShL-6c-S9e" firstAttribute="top" secondItem="iMh-xi-dFC" secondAttribute="top" constant="80" id="5xX-FU-QQe"/>
+                            <constraint firstItem="2X9-Ar-1GR" firstAttribute="centerX" secondItem="OwE-8m-E2t" secondAttribute="centerX" id="ZUa-Nk-YrJ"/>
+                            <constraint firstItem="ShL-6c-S9e" firstAttribute="centerX" secondItem="OwE-8m-E2t" secondAttribute="centerX" id="beK-3s-QNz"/>
+                            <constraint firstItem="cCG-2p-1z9" firstAttribute="centerX" secondItem="OwE-8m-E2t" secondAttribute="centerX" id="hqf-rH-TBB"/>
+                            <constraint firstItem="Pf3-az-wI0" firstAttribute="top" secondItem="cCG-2p-1z9" secondAttribute="bottom" constant="43" id="paf-n4-h6Y"/>
+                            <constraint firstItem="Pf3-az-wI0" firstAttribute="centerX" secondItem="OwE-8m-E2t" secondAttribute="centerX" id="rNO-dd-G8i"/>
+                            <constraint firstItem="cCG-2p-1z9" firstAttribute="top" secondItem="2X9-Ar-1GR" secondAttribute="bottom" constant="24" id="xbS-ew-m2A"/>
+                            <constraint firstItem="2X9-Ar-1GR" firstAttribute="top" secondItem="ShL-6c-S9e" secondAttribute="bottom" constant="29" id="yM0-p3-1Y3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ao8-ME-14v"/>
+                    <connections>
+                        <outlet property="myPhoto" destination="ShL-6c-S9e" id="HMW-mX-257"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dra-OS-y81" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2191" y="787"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="yPq-Rw-GdQ">
@@ -297,6 +492,10 @@
                                 <buttonConfiguration key="configuration" style="plain" image="info.circle.fill" catalog="system" title="">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="infoButtonTapped:" destination="JB4-xb-IIC" eventType="touchUpInside" id="mg7-st-LWT"/>
+                                    <segue destination="CbC-Dj-Vyn" kind="show" id="daD-G4-Il0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="펭귄마을" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhA-cY-UcT">
                                 <rect key="frame" x="28" y="412" width="116" height="35"/>
@@ -363,6 +562,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQh-mb-l2o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2860" y="73.93364928909952"/>
+        </scene>
+        <!--Web Info View Controller-->
+        <scene sceneID="oXa-zL-5FB">
+            <objects>
+                <viewController id="CbC-Dj-Vyn" customClass="WebInfoViewController" customModule="WowBro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Abm-cQ-pmw">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Pe-NQ-HFF">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bv0-3v-BOz">
+                                <rect key="frame" x="0.0" y="716" width="390" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="X1B-Wf-gFz"/>
+                                    <barButtonItem systemItem="stop" id="Dhh-AF-mJc">
+                                        <connections>
+                                            <action selector="btnStop:" destination="CbC-Dj-Vyn" id="qx8-qp-Yxf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="6nQ-S6-WzG"/>
+                                    <barButtonItem systemItem="refresh" id="2Hm-ba-l29">
+                                        <connections>
+                                            <action selector="btnRefresh:" destination="CbC-Dj-Vyn" id="MjB-UQ-jaQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="adE-BF-qBJ"/>
+                                    <barButtonItem systemItem="rewind" id="qnj-iV-0pf">
+                                        <connections>
+                                            <action selector="btnGoBack:" destination="CbC-Dj-Vyn" id="1Mq-Xw-9yK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="8Lq-gl-pPg"/>
+                                    <barButtonItem systemItem="fastForward" id="5bM-UW-TpU">
+                                        <connections>
+                                            <action selector="btnGoForward:" destination="CbC-Dj-Vyn" id="RrA-L5-xa2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="rzY-es-VVV"/>
+                                </items>
+                            </toolbar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="nKw-st-v0y">
+                                <rect key="frame" x="185" y="368" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NKh-o0-78L"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bv0-3v-BOz" firstAttribute="top" secondItem="1Pe-NQ-HFF" secondAttribute="bottom" constant="-40" id="3RR-tu-Kvi"/>
+                            <constraint firstItem="1Pe-NQ-HFF" firstAttribute="leading" secondItem="NKh-o0-78L" secondAttribute="leading" id="5iC-aY-aOY"/>
+                            <constraint firstItem="bv0-3v-BOz" firstAttribute="leading" secondItem="1Pe-NQ-HFF" secondAttribute="leading" id="7Ci-aE-DhC"/>
+                            <constraint firstItem="1Pe-NQ-HFF" firstAttribute="top" secondItem="NKh-o0-78L" secondAttribute="top" id="8T0-RC-iKP"/>
+                            <constraint firstItem="NKh-o0-78L" firstAttribute="trailing" secondItem="1Pe-NQ-HFF" secondAttribute="trailing" id="Abd-kA-QW6"/>
+                            <constraint firstItem="bv0-3v-BOz" firstAttribute="top" secondItem="1Pe-NQ-HFF" secondAttribute="bottom" constant="-40" id="BtK-IZ-F5k"/>
+                            <constraint firstItem="NKh-o0-78L" firstAttribute="bottom" secondItem="1Pe-NQ-HFF" secondAttribute="bottom" id="Ofk-dp-GD3"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="bv0-3v-BOz" secondAttribute="bottom" constant="-4" id="cvO-CM-yWb"/>
+                            <constraint firstItem="bv0-3v-BOz" firstAttribute="trailing" secondItem="1Pe-NQ-HFF" secondAttribute="trailing" id="nFn-hy-8Hk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UGF-nK-cro"/>
+                    <connections>
+                        <outlet property="myActivityIndicator" destination="nKw-st-v0y" id="DMY-Fa-zdT"/>
+                        <outlet property="tourWebView" destination="1Pe-NQ-HFF" id="TjH-sr-GcG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FQM-YZ-psJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3557" y="75"/>
         </scene>
         <!--회원가입-->
         <scene sceneID="kxY-RO-7Rs">
@@ -495,11 +769,17 @@
     </scenes>
     <resources>
         <image name="apple_logo" width="1181" height="1181"/>
+        <image name="arrow.uturn.left" catalog="system" width="128" height="112"/>
+        <image name="chohj" width="1332" height="1334"/>
         <image name="google_logo" width="500" height="500"/>
         <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="img_bg" width="720" height="1280"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="person.text.rectangle" catalog="system" width="128" height="93"/>
         <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <image name="town" width="450" height="300"/>
         <image name="yanglim" width="1291" height="726"/>
         <systemColor name="labelColor">
@@ -507,6 +787,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
