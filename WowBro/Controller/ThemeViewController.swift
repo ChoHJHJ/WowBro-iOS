@@ -11,7 +11,7 @@ class ThemeViewController: UIViewController {
     @IBOutlet weak var themeImageView: UIImageView!
     @IBOutlet weak var themeListTableView: UITableView!
     
-    var tourList: [Tour] = [Tour(tourName: "펭귄마을", address: "광주 남구 천변좌로 446번길 7", tourPhotoUrl: "ㅉㅈ", tourDetail: TourDetail(isGood: false, webViewUrl: "https://m.place.naver.com/place/37615287/home?entry=pll", qrCode: "www", storyTitle: "안녕하세요", tourStory: "안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 "), isStamped: false), Tour(tourName: "공예거리", address: "광주 남구 오기원길 20-13", tourPhotoUrl: "ㅉㅈ", tourDetail: TourDetail(isGood: false, webViewUrl: "https://m.place.naver.com/place/1530716998/home?entry=pll", qrCode: "www", storyTitle: "공예거리입니다.", tourStory: "마마마ㅏ마마마마마마마마마마마ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ"), isStamped: false)]
+    var tourList: [Tour] = [Tour(tourName: "펭귄마을", address: "광주 남구 천변좌로 446번길 7", tourPhotoUrl: "ㅉㅈ", tourDetail: TourDetail(isGood: false, webViewUrl: "https://m.place.naver.com/place/37615287/home?entry=pll", qrCode: "www", storyTitle: "안녕하세요", tourStory: "안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 "), isStamped: false, latitude: 35.14047, longitude: 126.91697), Tour(tourName: "공예거리", address: "광주 남구 오기원길 20-13", tourPhotoUrl: "ㅉㅈ", tourDetail: TourDetail(isGood: false, webViewUrl: "https://m.place.naver.com/place/1530716998/home?entry=pll", qrCode: "www", storyTitle: "공예거리입니다.", tourStory: "마마마ㅏ마마마마마마마마마마마ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ"), isStamped: false, latitude: 35.14006, longitude: 126.91646)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +26,12 @@ class ThemeViewController: UIViewController {
         themeListTableView.register(nibName, forCellReuseIdentifier: "TourTableViewCell")
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is MapViewController {
+            let mapVC = segue.destination as? MapViewController
+            mapVC?.mapList = tourList
+        }
+    }
 }
 
 extension ThemeViewController: UITableViewDelegate, UITableViewDataSource {

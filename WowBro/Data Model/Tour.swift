@@ -13,6 +13,8 @@ struct Tour: Codable {
     let tourPhotoUrl: String
     let tourDetail: TourDetail
     let isStamped: Bool?
+    let latitude: Double
+    let longitude: Double
 }
 
 struct TourDetail: Codable {

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AAC9D8DE9EDC11D103A7F07 /* Pods_WowBro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF7268128BD3251CAB2F992 /* Pods_WowBro.framework */; };
 		B32560CD27C5019200873CAA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32560CC27C5019200873CAA /* MainViewController.swift */; };
 		B32560CF27C5020B00873CAA /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32560CE27C5020B00873CAA /* ThemeViewController.swift */; };
 		B32560D227C506AF00873CAA /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32560D127C506AF00873CAA /* Tour.swift */; };
@@ -23,14 +22,26 @@
 		B3B4C10327C3DB600092482F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4C10227C3DB600092482F /* RegisterViewController.swift */; };
 		B3B4C10727C3E01D0092482F /* ExtensionUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4C10627C3E01D0092482F /* ExtensionUI.swift */; };
 		B3B4C10B27C3E2F00092482F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B4C10A27C3E28B0092482F /* Assets.xcassets */; };
+		B3C567C427C7819700323BA1 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C567C327C7819700323BA1 /* UpdateViewController.swift */; };
+		B3C567C827C7917F00323BA1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C567C727C7917F00323BA1 /* CoreLocation.framework */; };
+		B3C567CE27C791F000323BA1 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C567CD27C791F000323BA1 /* Metal.framework */; };
+		B3C567D027C7920900323BA1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C567CF27C7920900323BA1 /* QuartzCore.framework */; };
+		B3C567D227C7921400323BA1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C567D127C7921400323BA1 /* SystemConfiguration.framework */; };
+		B3C567D427C7978700323BA1 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C567D327C7977300323BA1 /* libc++.tbd */; };
+		B3C567D627C797B700323BA1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C567D527C797A900323BA1 /* libsqlite3.tbd */; };
+		B3C567D827C797CD00323BA1 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C567D727C797C500323BA1 /* libxml2.tbd */; };
+		B3C567DB27C7A03400323BA1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C567DA27C7A03400323BA1 /* MapViewController.swift */; };
+		B3C5680B27C7B28300323BA1 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C5680A27C7B28300323BA1 /* DaumMap.framework */; };
+		B3C5683F27C7D32100323BA1 /* DaumMap.embeddedframework in Resources */ = {isa = PBXBuildFile; fileRef = B3C5681727C7D27900323BA1 /* DaumMap.embeddedframework */; };
 		B3FB003427C6540A00820F16 /* CustomSideMenuNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB003327C6540A00820F16 /* CustomSideMenuNavigation.swift */; };
 		B3FB003827C67AFC00820F16 /* WebInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB003727C67AFC00820F16 /* WebInfoViewController.swift */; };
 		B3FB003A27C6835100820F16 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB003927C6835100820F16 /* SideMenuViewController.swift */; };
+		BDBBDA3CF4D5E6C919DDEE36 /* Pods_WowBro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC274861E239F253F7D91EE0 /* Pods_WowBro.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18D25B4F8325A624BAACA0F6 /* Pods-WowBro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowBro.release.xcconfig"; path = "Target Support Files/Pods-WowBro/Pods-WowBro.release.xcconfig"; sourceTree = "<group>"; };
-		59F4E269EBDA09D139035015 /* Pods-WowBro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowBro.debug.xcconfig"; path = "Target Support Files/Pods-WowBro/Pods-WowBro.debug.xcconfig"; sourceTree = "<group>"; };
+		30A20ACDD4E079C9CE53682F /* Pods-WowBro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowBro.release.xcconfig"; path = "Target Support Files/Pods-WowBro/Pods-WowBro.release.xcconfig"; sourceTree = "<group>"; };
+		91E7023C032AA6474DC2511D /* Pods-WowBro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowBro.debug.xcconfig"; path = "Target Support Files/Pods-WowBro/Pods-WowBro.debug.xcconfig"; sourceTree = "<group>"; };
 		B32560CC27C5019200873CAA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B32560CE27C5020B00873CAA /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		B32560D127C506AF00873CAA /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
@@ -48,10 +59,25 @@
 		B3B4C10227C3DB600092482F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B3B4C10627C3E01D0092482F /* ExtensionUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUI.swift; sourceTree = "<group>"; };
 		B3B4C10A27C3E28B0092482F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3C567C327C7819700323BA1 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
+		B3C567C727C7917F00323BA1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B3C567CD27C791F000323BA1 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		B3C567CF27C7920900323BA1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B3C567D127C7921400323BA1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B3C567D327C7977300323BA1 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		B3C567D527C797A900323BA1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B3C567D727C797C500323BA1 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		B3C567D927C79F4F00323BA1 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		B3C567DA27C7A03400323BA1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B3C5680A27C7B28300323BA1 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DaumMap.framework; path = DaumMap.embeddedframework/DaumMap.framework; sourceTree = "<group>"; };
+		B3C5681227C7BD8B00323BA1 /* DaumMap.embeddedframework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DaumMap.embeddedframework; sourceTree = "<group>"; };
+		B3C5681427C7CBBC00323BA1 /* WowBro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WowBro.entitlements; sourceTree = "<group>"; };
+		B3C5681527C7D25A00323BA1 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		B3C5681727C7D27900323BA1 /* DaumMap.embeddedframework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DaumMap.embeddedframework; path = ../../Downloads/IOS_DaumMap_SDK_1.4.0/lib/DaumMap.embeddedframework; sourceTree = "<group>"; };
 		B3FB003327C6540A00820F16 /* CustomSideMenuNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSideMenuNavigation.swift; sourceTree = "<group>"; };
 		B3FB003727C67AFC00820F16 /* WebInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebInfoViewController.swift; sourceTree = "<group>"; };
 		B3FB003927C6835100820F16 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
-		CFF7268128BD3251CAB2F992 /* Pods_WowBro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowBro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC274861E239F253F7D91EE0 /* Pods_WowBro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowBro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +85,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AAC9D8DE9EDC11D103A7F07 /* Pods_WowBro.framework in Frameworks */,
+				B3C567D027C7920900323BA1 /* QuartzCore.framework in Frameworks */,
+				B3C567D427C7978700323BA1 /* libc++.tbd in Frameworks */,
+				B3C567D627C797B700323BA1 /* libsqlite3.tbd in Frameworks */,
+				B3C567C827C7917F00323BA1 /* CoreLocation.framework in Frameworks */,
+				B3C567CE27C791F000323BA1 /* Metal.framework in Frameworks */,
+				B3C567D827C797CD00323BA1 /* libxml2.tbd in Frameworks */,
+				B3C567D227C7921400323BA1 /* SystemConfiguration.framework in Frameworks */,
+				B3C5680B27C7B28300323BA1 /* DaumMap.framework in Frameworks */,
+				BDBBDA3CF4D5E6C919DDEE36 /* Pods_WowBro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,8 +103,8 @@
 		0110C224582D73B40FAA44BF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				59F4E269EBDA09D139035015 /* Pods-WowBro.debug.xcconfig */,
-				18D25B4F8325A624BAACA0F6 /* Pods-WowBro.release.xcconfig */,
+				91E7023C032AA6474DC2511D /* Pods-WowBro.debug.xcconfig */,
+				30A20ACDD4E079C9CE53682F /* Pods-WowBro.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -78,7 +112,16 @@
 		7C13232415F1FFD86F95473A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CFF7268128BD3251CAB2F992 /* Pods_WowBro.framework */,
+				B3C567D727C797C500323BA1 /* libxml2.tbd */,
+				B3C567D527C797A900323BA1 /* libsqlite3.tbd */,
+				B3C567D327C7977300323BA1 /* libc++.tbd */,
+				B3C5681227C7BD8B00323BA1 /* DaumMap.embeddedframework */,
+				B3C567D127C7921400323BA1 /* SystemConfiguration.framework */,
+				B3C5680A27C7B28300323BA1 /* DaumMap.framework */,
+				B3C567CF27C7920900323BA1 /* QuartzCore.framework */,
+				B3C567CD27C791F000323BA1 /* Metal.framework */,
+				B3C567C727C7917F00323BA1 /* CoreLocation.framework */,
+				CC274861E239F253F7D91EE0 /* Pods_WowBro.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,6 +137,8 @@
 		B3B4C0DA27C3B0450092482F = {
 			isa = PBXGroup;
 			children = (
+				B3C5681727C7D27900323BA1 /* DaumMap.embeddedframework */,
+				B3C5681527C7D25A00323BA1 /* Resources */,
 				B3B4C0E527C3B0450092482F /* WowBro */,
 				B3B4C0E427C3B0450092482F /* Products */,
 				0110C224582D73B40FAA44BF /* Pods */,
@@ -112,6 +157,7 @@
 		B3B4C0E527C3B0450092482F /* WowBro */ = {
 			isa = PBXGroup;
 			children = (
+				B3C5681427C7CBBC00323BA1 /* WowBro.entitlements */,
 				B32560D027C506A000873CAA /* Data Model */,
 				B3B4C10927C3E0800092482F /* Delegate */,
 				B3B4C10827C3E0370092482F /* View */,
@@ -119,6 +165,7 @@
 				B3B4C0FD27C3B8220092482F /* Assets */,
 				B3B4C0F427C3B0460092482F /* Info.plist */,
 				B3B4C10A27C3E28B0092482F /* Assets.xcassets */,
+				B3C567D927C79F4F00323BA1 /* Header.h */,
 			);
 			path = WowBro;
 			sourceTree = "<group>";
@@ -136,6 +183,8 @@
 				B3FB003327C6540A00820F16 /* CustomSideMenuNavigation.swift */,
 				B3FB003727C67AFC00820F16 /* WebInfoViewController.swift */,
 				B3FB003927C6835100820F16 /* SideMenuViewController.swift */,
+				B3C567C327C7819700323BA1 /* UpdateViewController.swift */,
+				B3C567DA27C7A03400323BA1 /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -166,11 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3B4C0F727C3B0460092482F /* Build configuration list for PBXNativeTarget "WowBro" */;
 			buildPhases = (
-				18602EB8F226F522A713D43C /* [CP] Check Pods Manifest.lock */,
+				E320A25BBC8E612FA4FE3B95 /* [CP] Check Pods Manifest.lock */,
 				B3B4C0DF27C3B0450092482F /* Sources */,
 				B3B4C0E027C3B0450092482F /* Frameworks */,
 				B3B4C0E127C3B0450092482F /* Resources */,
-				A9B90C66B105351BCE052BA2 /* [CP] Embed Pods Frameworks */,
+				D7E6599615856128A26BFBF2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,6 +272,7 @@
 				B3B4C0FE27C3B8220092482F /* Assets in Resources */,
 				B3B4C10B27C3E2F00092482F /* Assets.xcassets in Resources */,
 				B32560D627C509E900873CAA /* TourTableViewCell.xib in Resources */,
+				B3C5683F27C7D32100323BA1 /* DaumMap.embeddedframework in Resources */,
 				B3B4C0EE27C3B0450092482F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,7 +280,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		18602EB8F226F522A713D43C /* [CP] Check Pods Manifest.lock */ = {
+		D7E6599615856128A26BFBF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WowBro/Pods-WowBro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WowBro/Pods-WowBro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WowBro/Pods-WowBro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E320A25BBC8E612FA4FE3B95 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,23 +319,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A9B90C66B105351BCE052BA2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WowBro/Pods-WowBro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WowBro/Pods-WowBro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WowBro/Pods-WowBro-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -281,6 +331,7 @@
 				B32560CF27C5020B00873CAA /* ThemeViewController.swift in Sources */,
 				B3FB003A27C6835100820F16 /* SideMenuViewController.swift in Sources */,
 				B32560D527C509E900873CAA /* TourTableViewCell.swift in Sources */,
+				B3C567C427C7819700323BA1 /* UpdateViewController.swift in Sources */,
 				B3B4C10327C3DB600092482F /* RegisterViewController.swift in Sources */,
 				B3FB003827C67AFC00820F16 /* WebInfoViewController.swift in Sources */,
 				B32560CD27C5019200873CAA /* MainViewController.swift in Sources */,
@@ -288,6 +339,7 @@
 				B3FB003427C6540A00820F16 /* CustomSideMenuNavigation.swift in Sources */,
 				B32560D827C529B900873CAA /* DetailViewController.swift in Sources */,
 				B3B4C0E927C3B0450092482F /* SceneDelegate.swift in Sources */,
+				B3C567DB27C7A03400323BA1 /* MapViewController.swift in Sources */,
 				B32560D227C506AF00873CAA /* Tour.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,13 +484,21 @@
 		};
 		B3B4C0F827C3B0460092482F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59F4E269EBDA09D139035015 /* Pods-WowBro.debug.xcconfig */;
+			baseConfigurationReference = 91E7023C032AA6474DC2511D /* Pods-WowBro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = WowBro/WowBro.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 44AH4SBVRQ;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator15.2]" = "arm64 x86_64";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+					"$(PROJECT_DIR)/WowBro/DaumMap.embeddedframework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WowBro/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -447,28 +507,40 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = chj.WowBro;
+				PRODUCT_BUNDLE_IDENTIFIER = chj.com.WowBro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = WowBro/Header.h;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		B3B4C0F927C3B0460092482F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18D25B4F8325A624BAACA0F6 /* Pods-WowBro.release.xcconfig */;
+			baseConfigurationReference = 30A20ACDD4E079C9CE53682F /* Pods-WowBro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = WowBro/WowBro.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 44AH4SBVRQ;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator15.2]" = "arm64 x86_64";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+					"$(PROJECT_DIR)/WowBro/DaumMap.embeddedframework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WowBro/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -477,16 +549,20 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = chj.WowBro;
+				PRODUCT_BUNDLE_IDENTIFIER = chj.com.WowBro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = WowBro/Header.h;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
