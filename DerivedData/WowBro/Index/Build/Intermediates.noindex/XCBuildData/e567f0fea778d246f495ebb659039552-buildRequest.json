@@ -1,0 +1,66 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd421d976f736b272eaf050e736d7ce32270"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd4200d5f1038a74fd722767d668286662d6"
+    },
+    {
+      "guid" : "68c28aa840b6c39934ed6e183b0b1ee3f312d2bfef6c9debaf004661fa5184aa"
+    }
+  ],
+  "containerPath" : "/Users/hyunjoong/Desktop/WowBro-iOS/WowBro.xcworkspace",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator15.2",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/hyunjoong/Desktop/WowBro-iOS/DerivedData/WowBro/Index/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/hyunjoong/Desktop/WowBro-iOS/DerivedData/WowBro/Index/Build/Products",
+      "derivedDataPath" : "/Users/hyunjoong/Desktop/WowBro-iOS/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/hyunjoong/Desktop/WowBro-iOS/DerivedData/WowBro/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/hyunjoong/Desktop/WowBro-iOS/DerivedData/WowBro/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/hyunjoong/Desktop/WowBro-iOS/DerivedData/WowBro/Index/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "INDEX_ARENA_INFO_REGULAR_BUILD_PRODUCTS_DIR" : "/Users/hyunjoong/Desktop/WowBro-iOS/DerivedData/WowBro/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

@@ -1,0 +1,19 @@
+version: "Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)"
+options: "e5ab5e9422a53ba45284d18bd4db99f7d23d5b063ef0ee7da37f5de7eaca9930"
+build_start_time: [1645880007, 31900882]
+build_end_time: [1645880011, 714457035]
+inputs:
+  "/Users/hyunjoong/Desktop/WowBro-iOS/Pods/SideMenu/Pod/Classes/Deprecations.swift": [1645702351, 9342193]
+  "/Users/hyunjoong/Desktop/WowBro-iOS/Pods/SideMenu/Pod/Classes/Extensions.swift": [1645702351, 9891510]
+  "/Users/hyunjoong/Desktop/WowBro-iOS/Pods/SideMenu/Pod/Classes/Initializable.swift": [1645702814, 504985332]
+  "/Users/hyunjoong/Desktop/WowBro-iOS/Pods/SideMenu/Pod/Classes/Print.swift": [1645702351, 8767843]
+  "/Users/hyunjoong/Desktop/WowBro-iOS/Pods/SideMenu/Pod/Classes/Protected.swift": [1645702351, 9562492]
+  "/Users/hyunjoong/Desktop/WowBro-iOS/Pods/SideMenu/Pod/Classes/SideMenuAnimationController.swift": [1645702814, 494112730]
+  "/Users/hyunjoong/Desktop/WowBro-iOS/Pods/SideMenu/Pod/Classes/SideMenuInteractionController.swift": [1645702351, 9222269]
+  "/Users/hyunjoong/Desktop/WowBro-iOS/Pods/SideMenu/Pod/Classes/SideMenuManager.swift": [1645702351, 9785652]
+  "/Users/hyunjoong/Desktop/WowBro-iOS/Pods/SideMenu/Pod/Classes/SideMenuNavigationController.swift": [1645702814, 485209941]
+  "/Users/hyunjoong/Desktop/WowBro-iOS/Pods/SideMenu/Pod/Classes/SideMenuPresentationController.swift": [1645702814, 460669994]
+  "/Users/hyunjoong/Desktop/WowBro-iOS/Pods/SideMenu/Pod/Classes/SideMenuPresentationStyle.swift": [1645702351, 9452581]
+  "/Users/hyunjoong/Desktop/WowBro-iOS/Pods/SideMenu/Pod/Classes/SideMenuPushCoordinator.swift": [1645702351, 9999275]
+  "/Users/hyunjoong/Desktop/WowBro-iOS/Pods/SideMenu/Pod/Classes/SideMenuTransitionController.swift": [1645702814, 513293743]
+  "/Users/hyunjoong/Desktop/WowBro-iOS/Pods/SideMenu/Pod/Classes/UITableViewVibrantCell.swift": [1645702351, 10400533]

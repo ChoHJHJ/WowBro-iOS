@@ -1,0 +1,16 @@
+Target dependency graph (8 targets)
+SideMenu in Pods, no dependencies
+Pods-WowBro in Pods, depends on:
+SideMenu in Pods (explicit)
+SideMenu in Pods, no dependencies
+Pods-WowBro in Pods, depends on:
+SideMenu in Pods (explicit)
+SideMenu in Pods, no dependencies
+Pods-WowBro in Pods, depends on:
+SideMenu in Pods (explicit)
+WowBro in WowBro, depends on:
+Pods-WowBro in Pods (implicit dependency via file 'Pods_WowBro.framework' in build phase 'Link Binary')
+SideMenu in Pods (implicit dependency via options '-framework SideMenu' in build setting 'OTHER_LDFLAGS')
+WowBro in WowBro, depends on:
+Pods-WowBro in Pods (implicit dependency via file 'Pods_WowBro.framework' in build phase 'Link Binary')
+SideMenu in Pods (implicit dependency via options '-framework SideMenu' in build setting 'OTHER_LDFLAGS')

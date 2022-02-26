@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>1C74DB7D-273A-4EBB-9FE8-F032A8388EB2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>1C74DB7D-273A-4EBB-9FE8-F032A8388EB2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>signature</key>
+			<string>WowBro-clyuobvyyxdwoigfongrcnexbisy</string>
+			<key>timeStartedRecording</key>
+			<real>667572806.99950302</real>
+			<key>timeStoppedRecording</key>
+			<real>667572814.91394901</real>
+			<key>title</key>
+			<string>Build target WowBro</string>
+			<key>uniqueIdentifier</key>
+			<string>1C74DB7D-273A-4EBB-9FE8-F032A8388EB2</string>
+		</dict>
+		<key>5C93DDF8-2BD0-4E70-A437-0201AAE47F7D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>5C93DDF8-2BD0-4E70-A437-0201AAE47F7D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>SideMenu-fzdxiskbsjmcsfgdidhylsigcfts</string>
+			<key>timeStartedRecording</key>
+			<real>667572806.99989498</real>
+			<key>timeStoppedRecording</key>
+			<real>667572813.14177299</real>
+			<key>title</key>
+			<string>Build target SideMenu</string>
+			<key>uniqueIdentifier</key>
+			<string>5C93DDF8-2BD0-4E70-A437-0201AAE47F7D</string>
+		</dict>
+		<key>D6395140-4950-4231-BA40-3660985F77E6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>D6395140-4950-4231-BA40-3660985F77E6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Pods-WowBro-fzdxiskbsjmcsfgdidhylsigcfts</string>
+			<key>timeStartedRecording</key>
+			<real>667572806.99932396</real>
+			<key>timeStoppedRecording</key>
+			<real>667572813.15679002</real>
+			<key>title</key>
+			<string>Build target Pods-WowBro</string>
+			<key>uniqueIdentifier</key>
+			<string>D6395140-4950-4231-BA40-3660985F77E6</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>

@@ -7,4 +7,5 @@ target 'WowBro' do
 
   # Pods for WowBro
   pod 'SideMenu'
+
 end

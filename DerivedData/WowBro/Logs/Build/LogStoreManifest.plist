@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>1F4F90BF-6568-42FC-868E-12C38BC7A944</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1F4F90BF-6568-42FC-868E-12C38BC7A944.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WowBro project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WowBro</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build WowBro</string>
+			<key>timeStartedRecording</key>
+			<real>667572806.21623898</real>
+			<key>timeStoppedRecording</key>
+			<real>667572814.92486298</real>
+			<key>title</key>
+			<string>Build WowBro</string>
+			<key>uniqueIdentifier</key>
+			<string>1F4F90BF-6568-42FC-868E-12C38BC7A944</string>
+		</dict>
+		<key>3E94D57D-C5CD-430A-BF07-510B5C7EC8DE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3E94D57D-C5CD-430A-BF07-510B5C7EC8DE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WowBro project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WowBro</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build WowBro</string>
+			<key>timeStartedRecording</key>
+			<real>667572555.057423</real>
+			<key>timeStoppedRecording</key>
+			<real>667572557.74236703</real>
+			<key>title</key>
+			<string>Build WowBro</string>
+			<key>uniqueIdentifier</key>
+			<string>3E94D57D-C5CD-430A-BF07-510B5C7EC8DE</string>
+		</dict>
+		<key>517388F5-4282-4932-9243-5ECC1CCA7C6E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>517388F5-4282-4932-9243-5ECC1CCA7C6E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WowBro project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WowBro</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build WowBro</string>
+			<key>timeStartedRecording</key>
+			<real>667572795.50994599</real>
+			<key>timeStoppedRecording</key>
+			<real>667572795.67781997</real>
+			<key>title</key>
+			<string>Build WowBro</string>
+			<key>uniqueIdentifier</key>
+			<string>517388F5-4282-4932-9243-5ECC1CCA7C6E</string>
+		</dict>
+		<key>6CD38913-99D1-482B-964A-4671D4173009</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6CD38913-99D1-482B-964A-4671D4173009.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WowBro project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WowBro</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build WowBro</string>
+			<key>timeStartedRecording</key>
+			<real>667572632.14700794</real>
+			<key>timeStoppedRecording</key>
+			<real>667572634.29645002</real>
+			<key>title</key>
+			<string>Build WowBro</string>
+			<key>uniqueIdentifier</key>
+			<string>6CD38913-99D1-482B-964A-4671D4173009</string>
+		</dict>
+		<key>81A5AB1E-A291-4C6E-980D-4246FD5292EA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>81A5AB1E-A291-4C6E-980D-4246FD5292EA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WowBro project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WowBro</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Clean WowBro</string>
+			<key>timeStartedRecording</key>
+			<real>667572630.64643896</real>
+			<key>timeStoppedRecording</key>
+			<real>667572630.73909605</real>
+			<key>title</key>
+			<string>Clean WowBro</string>
+			<key>uniqueIdentifier</key>
+			<string>81A5AB1E-A291-4C6E-980D-4246FD5292EA</string>
+		</dict>
+		<key>B3460DE8-B1B7-484F-9A8A-6EF03CE8DBA1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B3460DE8-B1B7-484F-9A8A-6EF03CE8DBA1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>WowBro project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>WowBro</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build WowBro</string>
+			<key>timeStartedRecording</key>
+			<real>667572774.444314</real>
+			<key>timeStoppedRecording</key>
+			<real>667572774.50519204</real>
+			<key>title</key>
+			<string>Build WowBro</string>
+			<key>uniqueIdentifier</key>
+			<string>B3460DE8-B1B7-484F-9A8A-6EF03CE8DBA1</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

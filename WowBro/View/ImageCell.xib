@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SCDream4.otf">
+            <string>S-CoreDream-4Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" translatesAutoresizingMaskIntoConstraints="NO" id="gTV-IL-0wX" customClass="ImageCell" customModule="WowBro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chohj" translatesAutoresizingMaskIntoConstraints="NO" id="tL0-Am-KdN">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="양림동 이야기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TQ-5B-q7Y">
+                        <rect key="frame" x="-11" y="60" width="122" height="23.5"/>
+                        <fontDescription key="fontDescription" name="S-CoreDream-4Regular" family="S-Core Dream" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="tL0-Am-KdN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DaX-4e-Du5"/>
+                <constraint firstItem="6TQ-5B-q7Y" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="EsS-pC-lw5"/>
+                <constraint firstAttribute="bottom" secondItem="tL0-Am-KdN" secondAttribute="bottom" id="IDQ-mD-3R9"/>
+                <constraint firstAttribute="trailing" secondItem="tL0-Am-KdN" secondAttribute="trailing" id="R4V-NC-wPV"/>
+                <constraint firstItem="6TQ-5B-q7Y" firstAttribute="top" secondItem="tL0-Am-KdN" secondAttribute="bottom" constant="-40" id="a3f-kK-YjG"/>
+                <constraint firstItem="tL0-Am-KdN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nhV-xV-gbb"/>
+            </constraints>
+            <size key="customSize" width="100" height="100"/>
+            <connections>
+                <outlet property="themeImageView" destination="tL0-Am-KdN" id="6R1-7f-wJl"/>
+                <outlet property="themeLabel" destination="6TQ-5B-q7Y" id="p6F-Fx-IeI"/>
+            </connections>
+            <point key="canvasLocation" x="168.11594202898553" y="81.696428571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="chohj" width="1332" height="1334"/>
+    </resources>
+</document>

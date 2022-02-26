@@ -1,0 +1,64 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "68c28aa840b6c39934ed6e183b0b1ee3f312d2bfef6c9debaf004661fa5184aa"
+    }
+  ],
+  "containerPath" : "/Users/hyunjoong/Desktop/WowBro-iOS/WowBro.xcworkspace",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator15.2",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/hyunjoong/Desktop/WowBro-iOS/DerivedData/WowBro/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/hyunjoong/Desktop/WowBro-iOS/DerivedData/WowBro/Build/Products",
+      "derivedDataPath" : "/Users/hyunjoong/Desktop/WowBro-iOS/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/hyunjoong/Desktop/WowBro-iOS/DerivedData/WowBro/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/hyunjoong/Desktop/WowBro-iOS/DerivedData/WowBro/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/hyunjoong/Desktop/WowBro-iOS/DerivedData/WowBro/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone14,2",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "15.2",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "94F195B0-5DC0-4674-A060-7AC6DA1FEE3C",
+          "TARGET_DEVICE_MODEL" : "iPhone14,2",
+          "TARGET_DEVICE_OS_VERSION" : "15.2",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
