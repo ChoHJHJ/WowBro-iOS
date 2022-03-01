@@ -24,10 +24,8 @@ class MainViewController: UIViewController {
     
     func initView() {
         let layout = UICollectionViewFlowLayout()
-        layout.estimatedItemSize = CGSize(width: 50, height: 50)
         layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = 10
-        layout.minimumLineSpacing = 30
+        layout.minimumLineSpacing = 20
         collectionView = UICollectionView(frame: collectionView.frame, collectionViewLayout: layout)
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -74,13 +72,13 @@ extension MainViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-        return CGSize(width: 100, height: 100)
+        return CGSize(width: 200, height: 200)
     }
 }
 
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 30
+        return 20
     }
 }
 

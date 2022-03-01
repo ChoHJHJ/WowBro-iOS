@@ -13,6 +13,10 @@
 		B32560D527C509E900873CAA /* TourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32560D327C509E900873CAA /* TourTableViewCell.swift */; };
 		B32560D627C509E900873CAA /* TourTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B32560D427C509E900873CAA /* TourTableViewCell.xib */; };
 		B32560D827C529B900873CAA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32560D727C529B900873CAA /* DetailViewController.swift */; };
+		B3378AC927CE418A0086E340 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3378AC827CE418A0086E340 /* RankingViewController.swift */; };
+		B3378ACF27CE43670086E340 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3378ACE27CE43670086E340 /* Ranking.swift */; };
+		B3378AD227CE548F0086E340 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3378AD027CE548F0086E340 /* RankingTableViewCell.swift */; };
+		B3378AD327CE548F0086E340 /* RankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3378AD127CE548F0086E340 /* RankingTableViewCell.xib */; };
 		B358BF3827CA60EA00DD1F22 /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B358BF3427CA5EEB00DD1F22 /* SideMenu.framework */; };
 		B3A934DA27CA34B600265A44 /* DaumMap.embeddedframework in Resources */ = {isa = PBXBuildFile; fileRef = B3A934D927CA34B600265A44 /* DaumMap.embeddedframework */; };
 		B3A934DD27CA3BBB00265A44 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A934DB27CA3BBB00265A44 /* ImageCell.swift */; };
@@ -54,6 +58,10 @@
 		B32560D327C509E900873CAA /* TourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewCell.swift; sourceTree = "<group>"; };
 		B32560D427C509E900873CAA /* TourTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourTableViewCell.xib; sourceTree = "<group>"; };
 		B32560D727C529B900873CAA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B3378AC827CE418A0086E340 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		B3378ACE27CE43670086E340 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
+		B3378AD027CE548F0086E340 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
+		B3378AD127CE548F0086E340 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
 		B358BF3427CA5EEB00DD1F22 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A934D927CA34B600265A44 /* DaumMap.embeddedframework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DaumMap.embeddedframework; sourceTree = "<group>"; };
 		B3A934DB27CA3BBB00265A44 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
@@ -146,6 +154,7 @@
 			children = (
 				B32560D127C506AF00873CAA /* Tour.swift */,
 				B3FF0D3127CCDD7A00C3E3A4 /* File.swift */,
+				B3378ACE27CE43670086E340 /* Ranking.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -202,6 +211,9 @@
 				B3C567DA27C7A03400323BA1 /* MapViewController.swift */,
 				B3A934DB27CA3BBB00265A44 /* ImageCell.swift */,
 				B3FF0D3327CCDE7500C3E3A4 /* RecommendTourCell.swift */,
+				B3378AC827CE418A0086E340 /* RankingViewController.swift */,
+				B3378AD027CE548F0086E340 /* RankingTableViewCell.swift */,
+				B3378AD127CE548F0086E340 /* RankingTableViewCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -294,6 +306,7 @@
 				B3A934DA27CA34B600265A44 /* DaumMap.embeddedframework in Resources */,
 				B3B4C10B27C3E2F00092482F /* Assets.xcassets in Resources */,
 				B32560D627C509E900873CAA /* TourTableViewCell.xib in Resources */,
+				B3378AD327CE548F0086E340 /* RankingTableViewCell.xib in Resources */,
 				B3B4C0EE27C3B0450092482F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +362,7 @@
 			files = (
 				B3B4C10727C3E01D0092482F /* ExtensionUI.swift in Sources */,
 				B3B4C0EB27C3B0450092482F /* ViewController.swift in Sources */,
+				B3378AC927CE418A0086E340 /* RankingViewController.swift in Sources */,
 				B32560CF27C5020B00873CAA /* ThemeViewController.swift in Sources */,
 				B3FB003A27C6835100820F16 /* SideMenuViewController.swift in Sources */,
 				B32560D527C509E900873CAA /* TourTableViewCell.swift in Sources */,
@@ -356,6 +370,8 @@
 				B3B4C10327C3DB600092482F /* RegisterViewController.swift in Sources */,
 				B3FB003827C67AFC00820F16 /* WebInfoViewController.swift in Sources */,
 				B32560CD27C5019200873CAA /* MainViewController.swift in Sources */,
+				B3378ACF27CE43670086E340 /* Ranking.swift in Sources */,
+				B3378AD227CE548F0086E340 /* RankingTableViewCell.swift in Sources */,
 				B3B4C0E727C3B0450092482F /* AppDelegate.swift in Sources */,
 				B3FF0D3527CCDE7500C3E3A4 /* RecommendTourCell.swift in Sources */,
 				B3FB003427C6540A00820F16 /* CustomSideMenuNavigation.swift in Sources */,
@@ -550,7 +566,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = WowBro/Header.h;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
@@ -593,7 +609,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = WowBro/Header.h;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
