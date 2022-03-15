@@ -7,5 +7,8 @@ target 'WowBro' do
 
   # Pods for WowBro
   pod 'SideMenu'
+  pod 'Alamofire', '~> 5.5'
+  pod 'Toast-Swift', '~> 5.0.1'
+  pod 'SwiftyJSON'
 
 end

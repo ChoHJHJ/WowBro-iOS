@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HQE-2G-db8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HQE-2G-db8">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -23,7 +23,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WowBro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="WowBro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,7 +92,7 @@
                                                     </attributedString>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="32A-H2-nsC" kind="show" id="DKs-Sc-GCM"/>
+                                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n3X-BY-cet"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -163,7 +163,7 @@
                     <navigationItem key="navigationItem" id="cqs-c9-fra"/>
                     <connections>
                         <outlet property="appleLoginButton" destination="jKe-Vx-OSz" id="Jmo-wz-voT"/>
-                        <outlet property="emailTextField" destination="Ydh-gp-Xc2" id="0ua-cu-3Bo"/>
+                        <outlet property="idTextField" destination="Ydh-gp-Xc2" id="0ua-cu-3Bo"/>
                         <outlet property="joinButton" destination="KJn-7L-OQh" id="8Lw-Vg-4nU"/>
                         <outlet property="loginButton" destination="XaM-4w-CzR" id="INc-C8-Fbc"/>
                         <outlet property="mainView" destination="Qyk-rT-KCi" id="lJk-CY-emo"/>
@@ -177,7 +177,7 @@
         <!--Main View Controller-->
         <scene sceneID="EcL-h6-ce8">
             <objects>
-                <viewController id="32A-H2-nsC" customClass="MainViewController" customModule="WowBro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="32A-H2-nsC" customClass="MainViewController" customModule="WowBro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BXU-3W-nwY">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -376,7 +376,7 @@
                 <navigationController id="qFc-tK-omL" customClass="CustomSideMenuNavigation" customModule="WowBro" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="hWN-Kj-edb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fwQ-xt-nXf">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -392,11 +392,11 @@
             <objects>
                 <viewController id="d3P-r4-fpi" customClass="UpdateViewController" customModule="WowBro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mQS-BL-8FX">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="roc-qo-bQI">
-                                <rect key="frame" x="0.0" y="88" width="390" height="756"/>
+                                <rect key="frame" x="0.0" y="56" width="390" height="734"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wowbro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBt-LF-d1K">
                                         <rect key="frame" x="126" y="70" width="138" height="52.333333333333343"/>
@@ -405,7 +405,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kMQ-er-TOi">
-                                        <rect key="frame" x="40" y="182.33333333333331" width="310" height="210"/>
+                                        <rect key="frame" x="40" y="182.33333333333337" width="310" height="210"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mt5-BS-U0u">
                                                 <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
@@ -416,7 +416,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 확인" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Qm-s8-pfy">
-                                                <rect key="frame" x="0.0" y="80" width="310" height="50"/>
+                                                <rect key="frame" x="0.0" y="79.999999999999972" width="310" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="q91-sC-pIp"/>
                                                 </constraints>
@@ -424,7 +424,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="닉네임" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bH1-I8-XVv">
-                                                <rect key="frame" x="0.0" y="160" width="310" height="50"/>
+                                                <rect key="frame" x="0.0" y="159.99999999999997" width="310" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="lIt-DA-fUF"/>
                                                 </constraints>
@@ -516,11 +516,11 @@
             <objects>
                 <viewController id="An5-9O-uhq" customClass="RankingViewController" customModule="WowBro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="znc-vk-yKH">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Eyj-JQ-jL4">
-                                <rect key="frame" x="16" y="98" width="358" height="712"/>
+                                <rect key="frame" x="16" y="66" width="358" height="724"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RankingTableViewCell" id="uhA-MO-HU6">
@@ -557,30 +557,30 @@
             <objects>
                 <viewController id="dpX-2y-UWW" customClass="SideMenuViewController" customModule="WowBro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OwE-8m-E2t">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chohj" translatesAutoresizingMaskIntoConstraints="NO" id="ShL-6c-S9e">
-                                <rect key="frame" x="145" y="168" width="100" height="100"/>
+                                <rect key="frame" x="145" y="136" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="VoR-RZ-Kjh"/>
                                     <constraint firstAttribute="width" constant="100" id="yNz-Un-oT5"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="chj113024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2X9-Ar-1GR">
-                                <rect key="frame" x="143" y="297" width="104" height="23.333333333333314"/>
+                                <rect key="frame" x="143" y="265" width="104" height="23.333333333333314"/>
                                 <fontDescription key="fontDescription" name="S-CoreDream-6Bold" family="S-Core Dream" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCG-2p-1z9">
-                                <rect key="frame" x="154" y="344.33333333333331" width="82" height="21"/>
+                                <rect key="frame" x="154" y="312.33333333333331" width="82" height="21"/>
                                 <fontDescription key="fontDescription" name="S-CoreDream-4Regular" family="S-Core Dream" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Pf3-az-wI0">
-                                <rect key="frame" x="113" y="408.33333333333331" width="164" height="140.99999999999994"/>
+                                <rect key="frame" x="113" y="376.33333333333331" width="164" height="140.99999999999994"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="qGK-QB-w1x">
                                         <rect key="frame" x="0.0" y="0.0" width="85" height="30"/>
@@ -678,7 +678,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="6uI-Xv-zgg">
-                                        <rect key="frame" x="0.0" y="111.00000000000006" width="125" height="30"/>
+                                        <rect key="frame" x="0.0" y="111" width="125" height="30"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.uturn.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="REZ-df-dAT">
                                                 <rect key="frame" x="0.0" y="2.3333333333333321" width="30" height="27.33333333333335"/>
@@ -787,13 +787,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="펭귄마을" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhA-cY-UcT">
-                                <rect key="frame" x="28.000000000000007" y="412" width="115.66666666666669" height="35"/>
+                                <rect key="frame" x="27.999999999999993" y="412" width="115.33333333333331" height="35"/>
                                 <fontDescription key="fontDescription" name="S-CoreDream-4Regular" family="S-Core Dream" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCY-fq-gIe">
-                                <rect key="frame" x="163.66666666666663" y="427" width="200" height="5"/>
+                                <rect key="frame" x="163.33333333333337" y="427" width="200" height="5"/>
                                 <color key="backgroundColor" red="0.7882314920425415" green="0.94510048627853394" blue="0.94509726762771606" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="5" id="UOn-kW-4nZ"/>
@@ -861,7 +861,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Pe-NQ-HFF">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="746"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -869,7 +869,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bv0-3v-BOz">
-                                <rect key="frame" x="0.0" y="716" width="390" height="44"/>
+                                <rect key="frame" x="0.0" y="750" width="390" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="X1B-Wf-gFz"/>
                                     <barButtonItem systemItem="stop" id="Dhh-AF-mJc">
@@ -953,7 +953,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="arn-jh-XNl"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" textContentType="username"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Gm-0C-PRh">
                                                 <rect key="frame" x="0.0" y="80" width="310" height="50"/>
@@ -961,7 +961,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="kkT-vN-o2p"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 확인" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UrR-Hv-mWX">
                                                 <rect key="frame" x="0.0" y="160" width="310" height="50"/>
@@ -969,7 +969,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="3E4-T6-6vd"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="닉네임" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rPV-hw-JPB">
                                                 <rect key="frame" x="0.0" y="240.00000000000006" width="310" height="50"/>
@@ -977,7 +977,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="vwJ-Z6-nmj"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" textContentType="username"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -999,6 +999,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="registerButtonClicked:" destination="o8g-kc-uez" eventType="touchUpInside" id="vWD-eF-oe3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
