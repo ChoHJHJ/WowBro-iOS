@@ -12,8 +12,8 @@
 		B32560D527C509E900873CAA /* TourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32560D327C509E900873CAA /* TourTableViewCell.swift */; };
 		B32560D627C509E900873CAA /* TourTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B32560D427C509E900873CAA /* TourTableViewCell.xib */; };
 		B32560D827C529B900873CAA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32560D727C529B900873CAA /* DetailViewController.swift */; };
-		B32FF26827E205FB00F5086D /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32FF26727E205FB00F5086D /* ThemeList.swift */; };
 		B32FF26C27E2284800F5086D /* TourVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32FF26B27E2284800F5086D /* TourVO.swift */; };
+		B32FF26F27E24CB000F5086D /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32FF26E27E24CB000F5086D /* ThemeList.swift */; };
 		B3378AC927CE418A0086E340 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3378AC827CE418A0086E340 /* RankingViewController.swift */; };
 		B3378ACF27CE43670086E340 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3378ACE27CE43670086E340 /* Ranking.swift */; };
 		B3378AD227CE548F0086E340 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3378AD027CE548F0086E340 /* RankingTableViewCell.swift */; };
@@ -58,8 +58,8 @@
 		B32560D327C509E900873CAA /* TourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewCell.swift; sourceTree = "<group>"; };
 		B32560D427C509E900873CAA /* TourTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourTableViewCell.xib; sourceTree = "<group>"; };
 		B32560D727C529B900873CAA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		B32FF26727E205FB00F5086D /* ThemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
 		B32FF26B27E2284800F5086D /* TourVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourVO.swift; sourceTree = "<group>"; };
+		B32FF26E27E24CB000F5086D /* ThemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
 		B3378AC827CE418A0086E340 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		B3378ACE27CE43670086E340 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
 		B3378AD027CE548F0086E340 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
@@ -156,8 +156,8 @@
 			children = (
 				B3FF0D3127CCDD7A00C3E3A4 /* File.swift */,
 				B3378ACE27CE43670086E340 /* Ranking.swift */,
-				B32FF26727E205FB00F5086D /* ThemeList.swift */,
 				B32FF26B27E2284800F5086D /* TourVO.swift */,
+				B32FF26E27E24CB000F5086D /* ThemeList.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -364,13 +364,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B4C10727C3E01D0092482F /* ExtensionUI.swift in Sources */,
+				B32FF26F27E24CB000F5086D /* ThemeList.swift in Sources */,
 				B3B4C0EB27C3B0450092482F /* ViewController.swift in Sources */,
 				B3378AC927CE418A0086E340 /* RankingViewController.swift in Sources */,
 				B32560CF27C5020B00873CAA /* ThemeViewController.swift in Sources */,
 				B3FB003A27C6835100820F16 /* SideMenuViewController.swift in Sources */,
 				B32560D527C509E900873CAA /* TourTableViewCell.swift in Sources */,
 				B3C567C427C7819700323BA1 /* UpdateViewController.swift in Sources */,
-				B32FF26827E205FB00F5086D /* ThemeList.swift in Sources */,
 				B3B4C10327C3DB600092482F /* RegisterViewController.swift in Sources */,
 				B3FB003827C67AFC00820F16 /* WebInfoViewController.swift in Sources */,
 				B32560CD27C5019200873CAA /* MainViewController.swift in Sources */,
