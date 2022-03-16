@@ -6,20 +6,30 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MainViewController: UIViewController {
     @IBOutlet var headerView: UIView!
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var tableView: UITableView!
     
-    let imageArray = [UIImage(named: "test"),UIImage(named: "test"),UIImage(named: "test"), UIImage(named: "test")]
+    var currentId: String?
     
-    let recommendTourList = [RecommenedTour(recommendTourName: "운암도서관", recommendTourImageUrl: "library", recommendTourWebViewUrl: "https://lib.bukgu.gwangju.kr/main.do"), RecommenedTour(recommendTourName: "운암도서관", recommendTourImageUrl: "library", recommendTourWebViewUrl: "https://lib.bukgu.gwangju.kr/main.do")]
+    let recommendTourList = [RecommenedTour(recommendTourName: "송정역시장", recommendTourImageUrl: "songjeong", recommendTourWebViewUrl: "https://m.place.naver.com/place/37823477/home?entry=plt"), RecommenedTour(recommendTourName: "운암도서관", recommendTourImageUrl: "library", recommendTourWebViewUrl: "https://lib.bukgu.gwangju.kr/main.do")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
         collectionView!.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 30)
+        
+        let preferences = UserDefaults.standard
+
+        if preferences.object(forKey: "insertedId") == nil {
+            print("Doesn't exist!")
+        } else {
+            currentId = preferences.string(forKey: "insertedId")
+        }
+        print(currentId!)
     }
     
     func initView() {
@@ -51,13 +61,13 @@ extension MainViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageArray.count
+        return themeList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         guard let themeViewController = storyboard.instantiateViewController(withIdentifier: "ThemeViewController" ) as? ThemeViewController else { return }
-        
+        themeViewController.tourName = themeList[indexPath.item].themeName
         self.show(themeViewController, sender: nil)
     }
 }
@@ -66,7 +76,9 @@ extension MainViewController: UICollectionViewDataSource {
 extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as! ImageCell
-        cell.themeImageView?.image = imageArray[indexPath.item]
+        let url = URL(string: themeList[indexPath.item].themeUrlString)
+        cell.themeImageView?.kf.setImage(with: url)
+        cell.themeLabel?.text = themeList[indexPath.item].themeName + " 이야기"
         return cell
     }
     

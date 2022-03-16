@@ -10,5 +10,6 @@ target 'WowBro' do
   pod 'Alamofire', '~> 5.5'
   pod 'Toast-Swift', '~> 5.0.1'
   pod 'SwiftyJSON'
+  pod 'Kingfisher', '~> 7.0'
 
 end

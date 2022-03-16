@@ -6,17 +6,21 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+import Kingfisher
 
 class ThemeViewController: UIViewController {
     @IBOutlet weak var themeImageView: UIImageView!
     @IBOutlet weak var themeListTableView: UITableView!
-    
-    var tourList: [Tour] = [Tour(tourName: "펭귄마을", address: "광주 남구 천변좌로 446번길 7", tourPhotoUrl: "ㅉㅈ", tourDetail: TourDetail(isGood: false, webViewUrl: "https://m.place.naver.com/place/37615287/home?entry=pll", qrCode: "www", storyTitle: "안녕하세요", tourStory: "안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 "), isStamped: false, latitude: 35.14047, longitude: 126.91697), Tour(tourName: "공예거리", address: "광주 남구 오기원길 20-13", tourPhotoUrl: "ㅉㅈ", tourDetail: TourDetail(isGood: false, webViewUrl: "https://m.place.naver.com/place/1530716998/home?entry=pll", qrCode: "www", storyTitle: "공예거리입니다.", tourStory: "마마마ㅏ마마마마마마마마마마마ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ"), isStamped: false, latitude: 35.14006, longitude: 126.91646)]
+    var tourName: String?
+    var tourThemeList: [TourVO] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationController?.navigationBar.titleTextAttributes = [ NSAttributedString.Key.font: UIFont(name: "S-Core Dream", size: 20)!, NSAttributedString.Key.foregroundColor: UIColor.darkGray]
+        self.navigationItem.title = tourName!
         themeImageView.layer.cornerRadius = 30
         themeListTableView.delegate = self
         themeListTableView.dataSource = self
@@ -24,19 +28,30 @@ class ThemeViewController: UIViewController {
         let nibName = UINib(nibName: "TourTableViewCell", bundle: nil)
         
         themeListTableView.register(nibName, forCellReuseIdentifier: "TourTableViewCell")
+        
+        let urlString = "http://localhost:3000/tourList/\(tourName!)"
+        let encodedString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        let url = URL(string: encodedString)!
+        let alamo = AF.request(url, method: .get)
+        
+        alamo.responseDecodable(of: [TourVO].self) {[weak self] response in
+            self?.tourThemeList = response.value ?? []
+            self?.themeListTableView.reloadData()
+        }
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is MapViewController {
             let mapVC = segue.destination as? MapViewController
-            mapVC?.mapList = tourList
+            mapVC?.mapList = tourThemeList
         }
     }
+    
 }
 
 extension ThemeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tourList.count
+        return tourThemeList.count
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -45,9 +60,10 @@ extension ThemeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "TourTableViewCell", for: indexPath) as? TourTableViewCell else { return UITableViewCell() }
-        cell.tourPhoto.image = UIImage(named: "test")
-        cell.tourName.text = tourList[indexPath.row].tourName
-        cell.tourAddress.text = tourList[indexPath.row].address
+        let url = URL(string: tourThemeList[indexPath.item].tourPhotoUrl)
+        cell.tourPhoto?.kf.setImage(with: url)
+        cell.tourName.text = tourThemeList[indexPath.row].tourName
+        cell.tourAddress.text = tourThemeList[indexPath.row].tourAddress
         return cell
     }
     
@@ -55,8 +71,7 @@ extension ThemeViewController: UITableViewDelegate, UITableViewDataSource {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         guard let detailViewController = storyboard.instantiateViewController(withIdentifier: "DetailViewController" ) as? DetailViewController else { return }
         
-        detailViewController.tourDetail = tourList[indexPath.row].tourDetail
-        detailViewController.name = tourList[indexPath.row].tourName
+        detailViewController.name = tourThemeList[indexPath.row].tourName
         self.show(detailViewController, sender: nil)
     }
 }

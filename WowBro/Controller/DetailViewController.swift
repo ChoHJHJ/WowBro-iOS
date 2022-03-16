@@ -8,7 +8,7 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    var tourDetail: TourDetail?
+    
     var name: String?
     @IBOutlet weak var qrButton: UIButton!
     @IBOutlet weak var thumbButton: UIButton!
@@ -26,15 +26,15 @@ class DetailViewController: UIViewController {
         tourStory.isEditable = false
         
         tourName.text = name
-        storyTitle.text = tourDetail?.storyTitle
-        tourStory.text = tourDetail?.tourStory
+        storyTitle.text = ""
+        tourStory.text = ""
     }
     
     // 웹뷰로 세그웨이 URL 데이터 보내기
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is WebInfoViewController {
             let webVC = segue.destination as? WebInfoViewController
-            webVC?.tourUrl = tourDetail?.webViewUrl
+            webVC?.tourUrl = nil
         }
     }
 }

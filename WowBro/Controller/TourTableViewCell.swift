@@ -15,6 +15,7 @@ class TourTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        tourAddress.numberOfLines = 0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

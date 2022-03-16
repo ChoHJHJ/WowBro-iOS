@@ -64,6 +64,9 @@ class ViewController: UIViewController {
                                     guard let mainViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController" ) as? MainViewController else { return }
                                     
                                     self.show(mainViewController, sender: nil)
+                                    
+                                    let preferences = UserDefaults.standard
+                                    preferences.set(insertedId, forKey: "insertedId")
                                 }
                             }
                         }

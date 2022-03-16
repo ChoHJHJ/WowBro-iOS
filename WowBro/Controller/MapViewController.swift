@@ -9,7 +9,7 @@ import UIKit
 
 class MapViewController: UIViewController, MTMapViewDelegate {
     var mapView: MTMapView!
-    var mapList: [Tour]?
+    var mapList: [TourVO]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class MapViewController: UIViewController, MTMapViewDelegate {
             let poiItem = MTMapPOIItem()
             poiItem.markerType = MTMapPOIItemMarkerType.customImage
             poiItem.customImageName = "thumb"
-            poiItem.mapPoint = MTMapPoint(geoCoord: MTMapPointGeo(latitude: place.latitude, longitude: place.longitude))
+            poiItem.mapPoint = MTMapPoint(geoCoord: MTMapPointGeo(latitude: place.tourLatitude, longitude: place.tourLongitude))
             poiItem.itemName = place.tourName
             
             mapView.addPOIItems([poiItem])
