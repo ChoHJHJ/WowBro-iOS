@@ -216,7 +216,6 @@
 				B3FF0D3327CCDE7500C3E3A4 /* RecommendTourCell.swift */,
 				B3378AC827CE418A0086E340 /* RankingViewController.swift */,
 				B3378AD027CE548F0086E340 /* RankingTableViewCell.swift */,
-				B3378AD127CE548F0086E340 /* RankingTableViewCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,6 +223,7 @@
 		B3B4C10827C3E0370092482F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B3378AD127CE548F0086E340 /* RankingTableViewCell.xib */,
 				B32560D427C509E900873CAA /* TourTableViewCell.xib */,
 				B3B4C0EC27C3B0450092482F /* Main.storyboard */,
 				B3B4C0F127C3B0460092482F /* LaunchScreen.storyboard */,

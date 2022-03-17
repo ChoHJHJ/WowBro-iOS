@@ -11,7 +11,7 @@ import SideMenu
 class CustomSideMenuNavigation: SideMenuNavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.menuWidth = self.view.frame.width * 0.7
+        self.menuWidth = self.view.frame.width * 0.5
         self.leftSide = true
     }
 }

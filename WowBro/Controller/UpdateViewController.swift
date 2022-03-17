@@ -30,4 +30,8 @@ class UpdateViewController: UIViewController {
         password2TextField.textFieldBorder()
         nickNameTextField.textFieldBorder()
     }
+    
+    @IBAction func btnWithdraw(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
 }

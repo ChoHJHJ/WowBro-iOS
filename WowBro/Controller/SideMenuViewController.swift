@@ -14,4 +14,8 @@ class SideMenuViewController: UIViewController {
     override func viewDidLoad() {
         photo.layer.cornerRadius = 30
     }
+    
+    @IBAction func dismiss(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
 }

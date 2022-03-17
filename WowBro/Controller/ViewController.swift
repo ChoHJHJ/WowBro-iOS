@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewInit()
+        self.view.window?.rootViewController = self
+        
     }
     
     // 로그인 뷰의 초기화 함수

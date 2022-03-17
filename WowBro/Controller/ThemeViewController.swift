@@ -71,7 +71,12 @@ extension ThemeViewController: UITableViewDelegate, UITableViewDataSource {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         guard let detailViewController = storyboard.instantiateViewController(withIdentifier: "DetailViewController" ) as? DetailViewController else { return }
         
-        detailViewController.name = tourThemeList[indexPath.row].tourName
+        let tourRow = tourThemeList[indexPath.row]
+        detailViewController.name = tourRow.tourName
+        detailViewController.sTitle = tourRow.tourTitle
+        detailViewController.story = tourRow.tourStory
+        detailViewController.detailImageUrl = tourRow.tourPhotoDetailUrl
+        detailViewController.webUrl = tourRow.tourWebUrl
         self.show(detailViewController, sender: nil)
     }
 }

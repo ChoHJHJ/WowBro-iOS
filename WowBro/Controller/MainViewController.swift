@@ -53,6 +53,20 @@ class MainViewController: UIViewController {
         
         self.view.addSubview(collectionView)
     }
+    
+    @IBAction func logout(_ sender: UIBarButtonItem) {
+        UserDefaults.standard.removeObject(forKey: "insertedId")
+        let alert = UIAlertController(title: "로그아웃", message: "로그아웃 하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
+        let okAction = UIAlertAction(title: "예", style: .destructive) { action in
+            self.dismiss(animated: true) {
+                self.navigationController?.popToRootViewController(animated: true)
+            }
+        }
+        let cancel = UIAlertAction(title: "아니오", style: .cancel, handler : nil)
+        alert.addAction(okAction)
+        alert.addAction(cancel)
+        present(alert, animated: true, completion: nil)
+    }
 }
 
 extension MainViewController: UICollectionViewDataSource {
