@@ -60,7 +60,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="W79-Nb-y6a"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJn-7L-OQh">
                                                 <rect key="frame" x="238" y="166.00000000000006" width="72" height="19.666666666666657"/>
@@ -458,6 +458,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="btnUpdate:" destination="d3P-r4-fpi" eventType="touchUpInside" id="FW7-jX-0fZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L8c-OC-8XS">
                                         <rect key="frame" x="40" y="549" width="310" height="50"/>
@@ -708,7 +711,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="ao8-ME-14v"/>
                     <connections>
+                        <outlet property="nickNameLabel" destination="cCG-2p-1z9" id="FSo-BH-Ipk"/>
                         <outlet property="photo" destination="ShL-6c-S9e" id="MZu-5r-yOp"/>
+                        <outlet property="userIdLabel" destination="2X9-Ar-1GR" id="xek-US-X5B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dra-OS-y81" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -738,7 +743,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="qrcode.viewfinder" catalog="system" title="">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
@@ -750,10 +755,10 @@
                                     <constraint firstAttribute="height" constant="75" id="e92-GD-SSr"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="hand.thumbsup.fill" catalog="system" title="">
+                                <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system" title="">
                                     <backgroundConfiguration key="background"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="19"/>
+                                    <color key="baseForegroundColor" systemColor="systemPinkColor"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0q-K4-A3o">
@@ -765,7 +770,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="info.circle.fill" catalog="system" title="">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="CbC-Dj-Vyn" kind="show" id="daD-G4-Il0"/>
@@ -785,8 +790,8 @@
                                     <constraint firstAttribute="width" constant="200" id="i2K-Fz-3EV"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="펭귄이야기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pma-VK-iZy">
-                                <rect key="frame" x="28" y="466" width="96" height="23.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="펭귄이야기" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pma-VK-iZy">
+                                <rect key="frame" x="28" y="466" width="334" height="23.333333333333314"/>
                                 <fontDescription key="fontDescription" name="S-CoreDream-4Regular" family="S-Core Dream" pointSize="20"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -818,6 +823,7 @@
                             <constraint firstItem="d4K-5x-ufA" firstAttribute="top" secondItem="2zx-PZ-iqi" secondAttribute="bottom" constant="-41" id="OyD-km-BSO"/>
                             <constraint firstItem="dCY-fq-gIe" firstAttribute="leading" secondItem="JhA-cY-UcT" secondAttribute="trailing" constant="20" id="Qkm-gn-SeA"/>
                             <constraint firstItem="Pma-VK-iZy" firstAttribute="top" secondItem="JhA-cY-UcT" secondAttribute="bottom" constant="19" id="VXE-vz-8Fj"/>
+                            <constraint firstItem="St5-Ag-7c4" firstAttribute="trailing" secondItem="Pma-VK-iZy" secondAttribute="trailing" constant="28" id="ZHm-GA-Kym"/>
                             <constraint firstItem="QEy-6P-GM4" firstAttribute="top" secondItem="2zx-PZ-iqi" secondAttribute="bottom" constant="-40" id="hXw-h0-ggP"/>
                             <constraint firstItem="St5-Ag-7c4" firstAttribute="trailing" secondItem="2zx-PZ-iqi" secondAttribute="trailing" id="n0n-wQ-rDd"/>
                             <constraint firstAttribute="bottom" secondItem="Yj9-XF-sW2" secondAttribute="bottom" constant="20" id="n2N-GN-Yd8"/>
@@ -1049,7 +1055,7 @@
         <image name="apple_logo" width="1181" height="1181"/>
         <image name="chohj" width="1332" height="1334"/>
         <image name="google_logo" width="500" height="500"/>
-        <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="img_bg" width="720" height="1280"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
@@ -1071,6 +1077,9 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
