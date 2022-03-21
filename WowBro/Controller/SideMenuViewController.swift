@@ -27,7 +27,7 @@ class SideMenuViewController: UIViewController {
             currentId = preferences.string(forKey: "insertedId")
         }
         
-        let urlString = "http://localhost:3000/userInfo/\(currentId!)"
+        let urlString = "http://192.168.0.9:3000/userInfo/\(currentId!)"
         let encodedString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         let url = URL(string: encodedString)!
         let alamo = AF.request(url, method: .get, encoding: JSONEncoding.default)

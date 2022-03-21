@@ -21,6 +21,8 @@ struct TourVO: Codable {
     var tourWebUrl: String
     var tourLatitude: Double
     var tourLongitude: Double
+    var qrAuth: Bool
+    var likeAuth: Bool
 }
 
 //func getInfo(tourName: String?) -> [TourVO] {

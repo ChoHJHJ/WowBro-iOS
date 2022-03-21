@@ -46,7 +46,7 @@ class RegisterViewController: UIViewController {
                 alert.addAction(action)
                 present(alert, animated: true, completion: nil)
             } else  {
-                let url = "http://localhost:3000/register"
+                let url = "http://192.168.0.9:3000/register"
                 let param: Parameters = [
                     "userID":userId,
                     "userPassword":password,

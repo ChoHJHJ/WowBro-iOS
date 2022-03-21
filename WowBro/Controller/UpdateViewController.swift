@@ -55,7 +55,7 @@ class UpdateViewController: UIViewController {
                 alert.addAction(action)
                 present(alert, animated: true, completion: nil)
             } else {
-                let url = "http://localhost:3000/userInfo/\(currentId!)"
+                let url = "http://192.168.0.9:3000/userInfo/\(currentId!)"
                 let param: Parameters = [
                     "userPassword": passwordTextField.text!,
                     "userNickName": nickNameTextField.text!]
@@ -77,7 +77,7 @@ class UpdateViewController: UIViewController {
         let alert = UIAlertController(title: "회원탈퇴", message: "탈퇴하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
         let okAction = UIAlertAction(title: "예", style: .destructive) { action in
             self.dismiss(animated: true) {
-                let url = "http://localhost:3000/userInfo/\(self.currentId!)"
+                let url = "http://192.168.0.9:3000/userInfo/\(self.currentId!)"
                 let alamo = AF.request(url, method: .delete,
                             encoding: URLEncoding.httpBody)
                 alamo.responseJSON() {

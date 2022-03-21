@@ -15,6 +15,8 @@ class DetailViewController: UIViewController {
     var sTitle: String?
     var detailImageUrl: String?
     var webUrl: String?
+    var qrUrl: String?
+    var theme: String?
     
     @IBOutlet weak var qrButton: UIButton!
     @IBOutlet weak var thumbButton: UIButton!
@@ -46,6 +48,11 @@ class DetailViewController: UIViewController {
         if segue.destination is WebInfoViewController {
             let webVC = segue.destination as? WebInfoViewController
             webVC?.tourUrl = webUrl
+        } else if segue.destination is QRViewController {
+            let qrVC = segue.destination as? QRViewController
+            qrVC?.themeName = theme
+            qrVC?.qrString = qrUrl
+            qrVC?.tourName = name
         }
     }
 }

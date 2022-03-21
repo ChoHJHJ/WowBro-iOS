@@ -41,7 +41,7 @@ class ViewController: UIViewController {
                 alert.addAction(action)
                 present(alert, animated: true, completion: nil)
             } else {
-                let urlString = "http://localhost:3000/userInfo/\(insertedId)"
+                let urlString = "http://192.168.0.9:3000/userInfo/\(insertedId)"
                 let encodedString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
                 let url = URL(string: encodedString)!
                 let alamo = AF.request(url, method: .get, encoding: JSONEncoding.default)

@@ -19,6 +19,7 @@
 		B3378AD227CE548F0086E340 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3378AD027CE548F0086E340 /* RankingTableViewCell.swift */; };
 		B3378AD327CE548F0086E340 /* RankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3378AD127CE548F0086E340 /* RankingTableViewCell.xib */; };
 		B358BF3827CA60EA00DD1F22 /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B358BF3427CA5EEB00DD1F22 /* SideMenu.framework */; };
+		B38877F127E8D2AC00647F66 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38877F027E8D2AC00647F66 /* QRViewController.swift */; };
 		B3A934DA27CA34B600265A44 /* DaumMap.embeddedframework in Resources */ = {isa = PBXBuildFile; fileRef = B3A934D927CA34B600265A44 /* DaumMap.embeddedframework */; };
 		B3A934DD27CA3BBB00265A44 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A934DB27CA3BBB00265A44 /* ImageCell.swift */; };
 		B3A934DE27CA3BBB00265A44 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3A934DC27CA3BBB00265A44 /* ImageCell.xib */; };
@@ -65,6 +66,7 @@
 		B3378AD027CE548F0086E340 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
 		B3378AD127CE548F0086E340 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
 		B358BF3427CA5EEB00DD1F22 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38877F027E8D2AC00647F66 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		B3A934D927CA34B600265A44 /* DaumMap.embeddedframework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DaumMap.embeddedframework; sourceTree = "<group>"; };
 		B3A934DB27CA3BBB00265A44 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		B3A934DC27CA3BBB00265A44 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				B3FF0D3327CCDE7500C3E3A4 /* RecommendTourCell.swift */,
 				B3378AC827CE418A0086E340 /* RankingViewController.swift */,
 				B3378AD027CE548F0086E340 /* RankingTableViewCell.swift */,
+				B38877F027E8D2AC00647F66 /* QRViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				B3B4C0E727C3B0450092482F /* AppDelegate.swift in Sources */,
 				B32FF26C27E2284800F5086D /* TourVO.swift in Sources */,
 				B3FF0D3527CCDE7500C3E3A4 /* RecommendTourCell.swift in Sources */,
+				B38877F127E8D2AC00647F66 /* QRViewController.swift in Sources */,
 				B3FB003427C6540A00820F16 /* CustomSideMenuNavigation.swift in Sources */,
 				B3FF0D3227CCDD7B00C3E3A4 /* File.swift in Sources */,
 				B32560D827C529B900873CAA /* DetailViewController.swift in Sources */,

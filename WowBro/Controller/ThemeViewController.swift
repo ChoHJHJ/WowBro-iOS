@@ -15,6 +15,7 @@ class ThemeViewController: UIViewController {
     @IBOutlet weak var themeListTableView: UITableView!
     var tourName: String?
     var tourThemeList: [TourVO] = []
+    var currentId: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,19 +26,29 @@ class ThemeViewController: UIViewController {
         themeListTableView.delegate = self
         themeListTableView.dataSource = self
         
+        let preferences = UserDefaults.standard
+        if preferences.object(forKey: "insertedId") == nil {
+            print("Doesn't exist!")
+        } else {
+            currentId = preferences.string(forKey: "insertedId")
+        }
+        
         let nibName = UINib(nibName: "TourTableViewCell", bundle: nil)
         
         themeListTableView.register(nibName, forCellReuseIdentifier: "TourTableViewCell")
         
-        let urlString = "http://localhost:3000/tourList/\(tourName!)"
+        let urlString = "http://192.168.0.9:3000/userInfo/\(currentId!)/tourInfo/\(tourName!)"
         let encodedString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         let url = URL(string: encodedString)!
         let alamo = AF.request(url, method: .get)
         
         alamo.responseDecodable(of: [TourVO].self) {[weak self] response in
             self?.tourThemeList = response.value ?? []
+            print(self!.tourThemeList)
             self?.themeListTableView.reloadData()
         }
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -77,6 +88,8 @@ extension ThemeViewController: UITableViewDelegate, UITableViewDataSource {
         detailViewController.story = tourRow.tourStory
         detailViewController.detailImageUrl = tourRow.tourPhotoDetailUrl
         detailViewController.webUrl = tourRow.tourWebUrl
+        detailViewController.qrUrl = tourRow.tourQRAddress
+        detailViewController.theme = tourRow.tourTheme
         self.show(detailViewController, sender: nil)
     }
 }
