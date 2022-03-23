@@ -82,8 +82,6 @@ extension QRViewController: AVCaptureMetadataOutputObjectsDelegate {
                 return
             }
             
-            
-            
             if stringValue.hasPrefix("http://") || stringValue.hasPrefix("https://") {
                 if stringValue == qrString {
                     

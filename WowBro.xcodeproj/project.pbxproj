@@ -20,6 +20,10 @@
 		B3378AD327CE548F0086E340 /* RankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3378AD127CE548F0086E340 /* RankingTableViewCell.xib */; };
 		B358BF3827CA60EA00DD1F22 /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B358BF3427CA5EEB00DD1F22 /* SideMenu.framework */; };
 		B38877F127E8D2AC00647F66 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38877F027E8D2AC00647F66 /* QRViewController.swift */; };
+		B388D96727EB44C5003192A9 /* TourRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388D96527EB44C5003192A9 /* TourRankingTableViewCell.swift */; };
+		B388D96827EB44C5003192A9 /* TourRankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B388D96627EB44C5003192A9 /* TourRankingTableViewCell.xib */; };
+		B388D96A27EB4735003192A9 /* TourRankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388D96927EB4735003192A9 /* TourRankingViewController.swift */; };
+		B388D96C27EB4A98003192A9 /* TourRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388D96B27EB4A98003192A9 /* TourRanking.swift */; };
 		B3A934DA27CA34B600265A44 /* DaumMap.embeddedframework in Resources */ = {isa = PBXBuildFile; fileRef = B3A934D927CA34B600265A44 /* DaumMap.embeddedframework */; };
 		B3A934DD27CA3BBB00265A44 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A934DB27CA3BBB00265A44 /* ImageCell.swift */; };
 		B3A934DE27CA3BBB00265A44 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3A934DC27CA3BBB00265A44 /* ImageCell.xib */; };
@@ -67,6 +71,10 @@
 		B3378AD127CE548F0086E340 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
 		B358BF3427CA5EEB00DD1F22 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38877F027E8D2AC00647F66 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		B388D96527EB44C5003192A9 /* TourRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourRankingTableViewCell.swift; sourceTree = "<group>"; };
+		B388D96627EB44C5003192A9 /* TourRankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourRankingTableViewCell.xib; sourceTree = "<group>"; };
+		B388D96927EB4735003192A9 /* TourRankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourRankingViewController.swift; sourceTree = "<group>"; };
+		B388D96B27EB4A98003192A9 /* TourRanking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourRanking.swift; sourceTree = "<group>"; };
 		B3A934D927CA34B600265A44 /* DaumMap.embeddedframework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DaumMap.embeddedframework; sourceTree = "<group>"; };
 		B3A934DB27CA3BBB00265A44 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		B3A934DC27CA3BBB00265A44 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
@@ -160,6 +168,7 @@
 				B3378ACE27CE43670086E340 /* Ranking.swift */,
 				B32FF26B27E2284800F5086D /* TourVO.swift */,
 				B32FF26E27E24CB000F5086D /* ThemeList.swift */,
+				B388D96B27EB4A98003192A9 /* TourRanking.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -208,6 +217,7 @@
 				B32560CC27C5019200873CAA /* MainViewController.swift */,
 				B32560CE27C5020B00873CAA /* ThemeViewController.swift */,
 				B32560D727C529B900873CAA /* DetailViewController.swift */,
+				B38877F027E8D2AC00647F66 /* QRViewController.swift */,
 				B3B4C10627C3E01D0092482F /* ExtensionUI.swift */,
 				B3FB003327C6540A00820F16 /* CustomSideMenuNavigation.swift */,
 				B3FB003727C67AFC00820F16 /* WebInfoViewController.swift */,
@@ -218,7 +228,8 @@
 				B3FF0D3327CCDE7500C3E3A4 /* RecommendTourCell.swift */,
 				B3378AC827CE418A0086E340 /* RankingViewController.swift */,
 				B3378AD027CE548F0086E340 /* RankingTableViewCell.swift */,
-				B38877F027E8D2AC00647F66 /* QRViewController.swift */,
+				B388D96527EB44C5003192A9 /* TourRankingTableViewCell.swift */,
+				B388D96927EB4735003192A9 /* TourRankingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,6 +243,7 @@
 				B3B4C0F127C3B0460092482F /* LaunchScreen.storyboard */,
 				B3A934DC27CA3BBB00265A44 /* ImageCell.xib */,
 				B3FF0D3427CCDE7500C3E3A4 /* RecommendTourCell.xib */,
+				B388D96627EB44C5003192A9 /* TourRankingTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,6 +325,7 @@
 				B3B4C10B27C3E2F00092482F /* Assets.xcassets in Resources */,
 				B32560D627C509E900873CAA /* TourTableViewCell.xib in Resources */,
 				B3378AD327CE548F0086E340 /* RankingTableViewCell.xib in Resources */,
+				B388D96827EB44C5003192A9 /* TourRankingTableViewCell.xib in Resources */,
 				B3B4C0EE27C3B0450092482F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,10 +395,13 @@
 				B3B4C0E727C3B0450092482F /* AppDelegate.swift in Sources */,
 				B32FF26C27E2284800F5086D /* TourVO.swift in Sources */,
 				B3FF0D3527CCDE7500C3E3A4 /* RecommendTourCell.swift in Sources */,
+				B388D96727EB44C5003192A9 /* TourRankingTableViewCell.swift in Sources */,
 				B38877F127E8D2AC00647F66 /* QRViewController.swift in Sources */,
 				B3FB003427C6540A00820F16 /* CustomSideMenuNavigation.swift in Sources */,
 				B3FF0D3227CCDD7B00C3E3A4 /* File.swift in Sources */,
+				B388D96C27EB4A98003192A9 /* TourRanking.swift in Sources */,
 				B32560D827C529B900873CAA /* DetailViewController.swift in Sources */,
+				B388D96A27EB4735003192A9 /* TourRankingViewController.swift in Sources */,
 				B3B4C0E927C3B0450092482F /* SceneDelegate.swift in Sources */,
 				B3A934DD27CA3BBB00265A44 /* ImageCell.swift in Sources */,
 				B3C567DB27C7A03400323BA1 /* MapViewController.swift in Sources */,
@@ -574,7 +590,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = WowBro/Header.h;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
@@ -617,7 +633,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = WowBro/Header.h;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;

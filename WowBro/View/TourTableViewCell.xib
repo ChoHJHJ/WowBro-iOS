@@ -47,6 +47,13 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stamp" translatesAutoresizingMaskIntoConstraints="NO" id="4gU-NG-kT4">
+                        <rect key="frame" x="335" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="PWU-AA-XLj"/>
+                            <constraint firstAttribute="height" constant="80" id="qZ1-53-Sop"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="AQb-jr-WrN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="37" id="2HB-FK-jsI"/>
@@ -55,9 +62,11 @@
                     <constraint firstItem="QJU-bu-I21" firstAttribute="top" secondItem="AQb-jr-WrN" secondAttribute="bottom" constant="25" id="6vM-lq-19c"/>
                     <constraint firstItem="uVu-j7-zU9" firstAttribute="top" secondItem="AQb-jr-WrN" secondAttribute="bottom" constant="20" id="IH9-Yu-4OA"/>
                     <constraint firstItem="6rr-8q-JFm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="JUm-lJ-XhP"/>
+                    <constraint firstItem="4gU-NG-kT4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="P7B-z4-UMV"/>
                     <constraint firstItem="6rr-8q-JFm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Rtr-qW-f8c"/>
                     <constraint firstItem="AQb-jr-WrN" firstAttribute="leading" secondItem="6rr-8q-JFm" secondAttribute="trailing" constant="10" id="krK-PB-LfG"/>
                     <constraint firstItem="QJU-bu-I21" firstAttribute="leading" secondItem="uVu-j7-zU9" secondAttribute="trailing" constant="2" id="wmA-xN-Afx"/>
+                    <constraint firstAttribute="trailing" secondItem="4gU-NG-kT4" secondAttribute="trailing" constant="10" id="wqV-sZ-Tyx"/>
                     <constraint firstItem="uVu-j7-zU9" firstAttribute="leading" secondItem="6rr-8q-JFm" secondAttribute="trailing" constant="10" id="xbP-dZ-a43"/>
                 </constraints>
             </tableViewCellContentView>
@@ -66,11 +75,13 @@
                 <outlet property="tourAddress" destination="QJU-bu-I21" id="bGg-0B-MMn"/>
                 <outlet property="tourName" destination="AQb-jr-WrN" id="ZSD-bY-uL7"/>
                 <outlet property="tourPhoto" destination="6rr-8q-JFm" id="Xwi-JT-3fe"/>
+                <outlet property="tourStamp" destination="4gU-NG-kT4" id="aEP-42-vXl"/>
             </connections>
             <point key="canvasLocation" x="99.230769230769226" y="44.075829383886251"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="stamp" width="640" height="640"/>
         <image name="test" width="225" height="225"/>
         <image name="thumb" width="300" height="300"/>
     </resources>

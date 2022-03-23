@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct Ranking {
-    let rankingNum: Int
-    let profileImage: String
-    let userName: String
+struct Ranking: Codable {
+    let qrCount: Int
+    let userID: String
 }

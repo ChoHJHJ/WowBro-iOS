@@ -1,23 +1,23 @@
 //
-//  RankingTableViewCell.swift
+//  TourRankingTableViewCell.swift
 //  WowBro
 //
-//  Created by HyunJoong on 2022/03/01.
+//  Created by HyunJoong on 2022/03/23.
 //
 
 import UIKit
 
-class RankingTableViewCell: UITableViewCell {
-    @IBOutlet var rankingLabel: UILabel!
-    @IBOutlet var profileImage: UIImageView!
-    @IBOutlet var userNameLabel: UILabel!
-    @IBOutlet var qrScore: UILabel!
+class TourRankingTableViewCell: UITableViewCell {
+    @IBOutlet var tourRankingLabel: UILabel!
+    @IBOutlet var tourNameLabel: UILabel!
+    @IBOutlet var tourPopularityLabel: UILabel!
+    @IBOutlet var tourPhoto: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         contentView.layer.cornerRadius = 15
-        profileImage.layer.cornerRadius = 20
+        tourPhoto.layer.cornerRadius = 20
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

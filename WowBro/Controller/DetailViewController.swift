@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import Alamofire
 
 class DetailViewController: UIViewController {
     
@@ -17,9 +18,10 @@ class DetailViewController: UIViewController {
     var webUrl: String?
     var qrUrl: String?
     var theme: String?
+    var qrAuth: Bool?
     
     @IBOutlet weak var qrButton: UIButton!
-    @IBOutlet weak var thumbButton: UIButton!
+    @IBOutlet weak var heartButton: UIButton!
     @IBOutlet weak var infoButton: UIButton!
     @IBOutlet weak var tourName: UILabel!
     @IBOutlet weak var storyTitle: UILabel!
@@ -30,7 +32,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         qrButton.roundButton()
-        thumbButton.roundButton()
+        heartButton.roundButton()
         infoButton.roundButton()
         tourStory.isEditable = false
         
@@ -43,16 +45,39 @@ class DetailViewController: UIViewController {
         detailImage?.kf.setImage(with: url)
     }
     
+    @IBAction func btnLike(_ sender: UIButton) {
+        heartButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+        let urlString = "http://192.168.0.9:3000/tourInfo/\(name!)"
+        let encodedString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        let url = URL(string: encodedString)!
+        let alamo = AF.request(url, method: .patch,
+                    encoding: URLEncoding.httpBody)
+        
+        alamo.responseJSON() {
+            response in
+            print("업데이트 성공")
+            print(url)
+        }
+        
+    }
+    
     // 웹뷰로 세그웨이 URL 데이터 보내기
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is WebInfoViewController {
             let webVC = segue.destination as? WebInfoViewController
             webVC?.tourUrl = webUrl
         } else if segue.destination is QRViewController {
-            let qrVC = segue.destination as? QRViewController
-            qrVC?.themeName = theme
-            qrVC?.qrString = qrUrl
-            qrVC?.tourName = name
+            if qrAuth! {
+                let alert = UIAlertController(title: "QR인증 완료", message: "QR코드 인증을 완료하셨습니다.", preferredStyle: UIAlertController.Style.alert)
+                let action = UIAlertAction(title: "OK", style: .default)
+                alert.addAction(action)
+                present(alert, animated: true, completion: nil)
+            } else {
+                let qrVC = segue.destination as? QRViewController
+                qrVC?.themeName = theme
+                qrVC?.qrString = qrUrl
+                qrVC?.tourName = name
+            }
         }
     }
 }

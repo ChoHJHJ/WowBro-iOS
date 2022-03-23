@@ -11,6 +11,7 @@ class TourTableViewCell: UITableViewCell {
     @IBOutlet weak var tourPhoto: UIImageView!
     @IBOutlet weak var tourName: UILabel!
     @IBOutlet weak var tourAddress: UILabel!
+    @IBOutlet var tourStamp: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
